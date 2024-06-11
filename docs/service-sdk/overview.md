@@ -1,11 +1,11 @@
 ---
-title: 👨‍🔧 Klaytn Service SDK
+title: 👨‍🔧 Kaia Service SDK
 sidebar_label: Overview
 ---
 
 ## Overview <a id="overview"></a>
 
-The Klaytn Service SDK (KSS) is a set of npm packages that simplifies the usage of various services on the Klaytn blockchain by wrapping their functionality into easy-to-use packages. It aims to integrate all the ecosystem services in Klaytn and comes with starter kits containing default configurations and tools.  
+The Kaia Service SDK (KSS) is a set of npm packages that simplifies the usage of various services on the Kaia blockchain by wrapping their functionality into easy-to-use packages. It aims to integrate all the ecosystem services in Kaia and comes with starter kits containing default configurations and tools.  
  
 The KSS also includes a Command Line Interface (CLI) that enables developers to manage services from their local terminal. Developers can use the SDK by simply importing the npm package to access third-party services such as Oracles and Bridges. 
 
@@ -23,19 +23,19 @@ The SDK provides several features and benefits, including:
 
 ## Use cases <a id="usecases"></a>
 
-The Klaytn Service SDK (KSS) brings various benefits to the metaverse, including: 
+The Kaia Service SDK (KSS) brings various benefits to the metaverse, including: 
 
-* **Interoperability**: If you’re building a decentralized app (dApp) in the metaverse and want to allow users to access networks other than Klaytn, the KSS's Bridge-starter kit enables the bridging of assets to other networks. This enhances user flexibility and retention.  
+* **Interoperability**: If you’re building a decentralized app (dApp) in the metaverse and want to allow users to access networks other than Kaia, the KSS's Bridge-starter kit enables the bridging of assets to other networks. This enhances user flexibility and retention.  
 
 * **Increased functionality**: If you're developing a gaming app in the metaverse that needs real-world data, the KSS's Oracle-starter-kit can integrate off-chain data into your dApp, giving it more functionality. 
 
 * **Access to diversity**: If you're building a marketplace or a wallet in the metaverse, the KSS's Dex-starter-kit can communicate with existing decentralized exchanges and be used to exchange assets, providing users with more flexibility and access to a diverse range of assets.  
 
-* **Unified**: The Klaytn-service-sdk npm package eliminates the need to download multiple packages or perform multiple configurations for different use cases. You can implement all of these use cases in one place using the Klaytn Service SDK. 
+* **Unified**: The Kaia-service-sdk npm package eliminates the need to download multiple packages or perform multiple configurations for different use cases. You can implement all of these use cases in one place using the Kaia Service SDK. 
 
 ## Packages <a id="Packages"></a>
 
-Klaytn is committed to making all ecosystem services available as part of this SDK. While we work on adding more resources, you may first access various kits that are currently available with this [release](https://github.com/klaytn/klaytn-service-sdk/releases).
+Kaia is committed to making all ecosystem services available as part of this SDK. While we work on adding more resources, you may first access various kits that are currently available with this [release](https://github.com/klaytn/klaytn-service-sdk/releases).
 
 **Oracle Starter Kit:**
 The [Oracle Starter Kit](./oracle-starter-kit.md) provides libraries for random number generation, external API (GET/POST) calls and price feed.
@@ -47,5 +47,5 @@ The Bridge Starter Kit provides options to interoperate with other chains. [Worm
 The DEX Starter Kit provides libraries to integrate with dex-contracts and implement features like swapping, staking, farming, minting, and excuting multisig transactions.
 
 :::info
-If you have any questions, please join our [Discord server](https://discord.io/KlaytnOfficial), or send us an email at developers@klaytn.foundation
+If you have any questions, please join our [Discord server](https://discord.gg/kaiachain), or send us an email at developers@kaia.io
 :::

@@ -39,7 +39,7 @@ Go to **File** → **Build Settings** → **Add Open Scenes**. The SampleScene w
 
 ## Create your Contract <a id="Create your Contract"></a>
 
-* Open Remix IDE, install the Klaytn Remix plugin then paste the code below:
+* Open Remix IDE, install the Kaia Remix plugin then paste the code below:
 
 ```javascript
 // SPDX-License-Identifier: MIT
@@ -60,7 +60,7 @@ contract Storage {
 
 ```
 
-* Compile your contract and deploy it to baobab testnet (get your faucet [here](https://baobab.wallet.klaytn.foundation/faucet)).
+* Compile your contract and deploy it to kairos testnet (get your faucet [here](https://baobab.wallet.klaytn.foundation/faucet)).
 
 
 ## Create your C# script on Unity <a id="Create your C# script on Unity"></a>
@@ -188,5 +188,5 @@ Confirm your transaction on Metamask and voilà ! Your transaction is sent to th
 
 
 :::info
-If you have any questions, please join our [Discord server](https://discord.io/KlaytnOfficial), or send us an email at developers@klaytn.foundation
+If you have any questions, please join our [Discord server](https://discord.io/kaiachain), or send us an email at developers@kaia.io
 :::

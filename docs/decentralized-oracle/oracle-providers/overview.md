@@ -5,7 +5,7 @@ sidebar_label: Overview
 
 ## Overview <a id="Decentralized Oracle Providers"></a>
 
-Below is a list of decentralized oracles that Klaytn has integrated and that you can use for your metaverse application's oracle needs.
+Below is a list of decentralized oracles that Kaia has integrated and that you can use for your metaverse application's oracle needs.
 
 * [Orakl Network](https://docs.orakl.network)
 * [Witnet](https://docs.witnet.io/)
@@ -14,7 +14,7 @@ Below is a list of decentralized oracles that Klaytn has integrated and that you
 
 
 :::info
-If you have any questions, please join our [Discord server](https://discord.io/KlaytnOfficial), or send us an email at developers@klaytn.foundation
+If you have any questions, please join our [Discord server](https://discord.gg/kaiachain), or send us an email at developers@kaia.io
 :::
 
 

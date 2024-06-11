@@ -5,7 +5,7 @@ sidebar_label: Tutorial
 
 # 💻 Simple On-chain Governance Tutorial
 
-In this tutorial you will use [Klaytn Contract](https://github.com/klaytn/klaytn-contracts), [Klaytn Contract Wizard](https://wizard.klaytn.foundation/)  and [Caver-Js](https://docs.klaytn.foundation/content/dapp/sdk/caver-js/getting-started) to run a simple on-chain governance. You will learn about how to:
+In this tutorial you will use [Kaia Contract](https://github.com/klaytn/klaytn-contracts), [Kaia Contract Wizard](https://wizard.klaytn.foundation/)  and [Caver-Js](https://docs.klaytn.foundation/content/dapp/sdk/caver-js/getting-started) to run a simple on-chain governance. You will learn about how to:
 * Create a KIP7 governance token contract that you ll use to cast votes on the governance proposals.
 * Create a standard governor contract.
 * Create a mintable KIP7 contract that will mint new tokens on the successful execution of the on-chain governance proposal.
@@ -14,7 +14,7 @@ In this tutorial you will use [Klaytn Contract](https://github.com/klaytn/klaytn
 
 * [Metamask](https://metamask.io/download/): Used to deploy the contracts interact with the contracts.
 * [Remix IDE](https://remix.ethereum.org/): Used to compile the contracts and deploy through MetaMask.
-* [Klaytn Plugin on Remix](https://klaytn.foundation/using-klaytn-plugin-on-remix/): develop, deploy, and interact with smart contracts on the Klaytn blockchain and execute various Klaytn-specific transactions
+* [Kaia Plugin on Remix](https://klaytn.foundation/using-klaytn-plugin-on-remix/): develop, deploy, and interact with smart contracts on the Kaia blockchain and execute various Kaia-specific transactions
 * Test KLAY from [Faucet](https://baobab.wallet.klaytn.foundation/faucet): Fund your account with sufficient KLAY
 * [Node Js and NPM](https://kinsta.com/blog/how-to-install-node-js/)
 
@@ -22,9 +22,9 @@ In this tutorial you will use [Klaytn Contract](https://github.com/klaytn/klaytn
 
 In this section, you'll create your simple governance token—the token you will use to vote on proposals in the governance contract.
 
-**Klaytn Contract Wizard**
+**Kaia Contract Wizard**
 
-* Open [Klaytn Contract Wizard](https://wizard.klaytn.foundation/)
+* Open [Kaia Contract Wizard](https://wizard.klaytn.foundation/)
 * Select **KIP7**.
 * Provide a `name` and a `symbol` for the token. For example: *GovernanceToken*, *GTK*.
 * In **Premint**, provide the number of tokens to issue to your account. For example: *100*.
@@ -35,12 +35,12 @@ In this section, you'll create your simple governance token—the token you will
 
 **Remix IDE**
 * In Remix, click **Compile contract**.
-* Click the **Klaytn tab** on your left having installed the plugin
+* Click the **Kaia tab** on your left having installed the plugin
 * Select **Environment** > **Injected Provider** - **MetaMask**.
 * In **Contract**, select your contract. For example, *GovernanceToken*.
 * Click **Deploy**.
 
-This will engage your MetaMask to deploy the contract to the Klaytn Baobab Testnet through your currently selected MetaMask account. Click **Confirm** in the MetaMask modal.
+This will engage your MetaMask to deploy the contract to the Kaia Kairos Testnet through your currently selected MetaMask account. Click **Confirm** in the MetaMask modal.
 
 ![](/images/dao/daoRemixGovtToken.png)
 
@@ -48,9 +48,9 @@ This will engage your MetaMask to deploy the contract to the Klaytn Baobab Testn
 
 In this section, you'll create a mintable token that will be used by the governance contract to mint tokens on passing the on-chain proposal.
 
-**Klaytn Contract Wizard**
+**Kaia Contract Wizard**
 
-* Open [Klaytn Contract Wizard](https://wizard.klaytn.foundation/)
+* Open [Kaia Contract Wizard](https://wizard.klaytn.foundation/)
 * Select **KIP7**.
 * Provide a `name` and a `symbol` for the token. For example: *GovMintableToken*, *GMTK*.
 * In **Premint**, keep **0**.
@@ -62,12 +62,12 @@ In this section, you'll create a mintable token that will be used by the governa
 **Remix IDE**
 
 * In Remix, click **Compile contract**.
-* Click the **Klaytn tab** on your left having installed the plugin.
+* Click the **Kaia tab** on your left having installed the plugin.
 * Select **Environment** > **Injected Provider** - **MetaMask**.
 * In **Contract**, select your contract. For example, *GovMintableToken*.
 * Click **Deploy**.
   
-This will engage your MetaMask to deploy the contract to the Klaytn Baobab Testnet through your currently selected MetaMask account. Click **Confirm** in the MetaMask modal.
+This will engage your MetaMask to deploy the contract to the Kaia Kairos Testnet through your currently selected MetaMask account. Click **Confirm** in the MetaMask modal.
 
 ![](/images/dao/daoRemixGovtMintToken.png)
 
@@ -75,9 +75,9 @@ This will engage your MetaMask to deploy the contract to the Klaytn Baobab Testn
 
 This will be your on-chain governance contract.
 
-**Klaytn Contract Wizard**
+**Kaia Contract Wizard**
 
-* Open [Klaytn Contract Wizard](https://wizard.klaytn.foundation/)
+* Open [Kaia Contract Wizard](https://wizard.klaytn.foundation/)
 * Select **Governor**.
 * Provide a `name` and a `symbol` for the token. For example: *GovernanceContract*.
 * In **Voting Delay**, keep 1 block. In the **Voting Period**, put 300 blocks. In **1 block** =, put 1 second. This will be about 5 minutes for a voting period.
@@ -92,13 +92,13 @@ This will be your on-chain governance contract.
 **Remix IDE**
 
 * In Remix, click **Compile contract**.
-* Click the **Klaytn tab** on your left having installed the plugin.
+* Click the **Kaia tab** on your left having installed the plugin.
 * Select **Environment** > **Injected Provider** - **MetaMask**.
 * In Contract, select your contract. For example, *GovernanceContract*.
 * In **Deploy**, provide the address of the KIP-7 governance token that you deployed as the first contract of this tutorial. This will make the deployed contract recognize the KIP-7 token as the contract's voting token.
 * Click **Deploy**.
 
-This will engage your MetaMask to deploy the contract to the Klaytn Baobab Testnet through your currently selected MetaMask account. Click **Confirm** in the MetaMask modal. 
+This will engage your MetaMask to deploy the contract to the Kaia Kairos Testnet through your currently selected MetaMask account. Click **Confirm** in the MetaMask modal. 
 
 ![](/images/dao/daoRemixGovernanceContract.png)
 
@@ -155,7 +155,7 @@ caver.wallet.add(keyring)
 
 ### Execute Scripts <a id="Execute Scripts"></a>
 
-The perform an on-chain governance on the Klaytn Baobab testnet we need to go through the following steps
+The perform an on-chain governance on the Kaia Kairos testnet we need to go through the following steps
 
 ### a. Delegate the votes <a id="Delegate the votes"></a>
 
@@ -425,9 +425,9 @@ Congratulations on performing your on-chain governance successfully. You can fin
  
 ## 6. Conclusion <a id="Conclusion"></a>
 
-This tutorial guided you through the basics of creating and deploying a set of DAO contracts to mint KIP7 tokens through on-chain governance on the Klaytn Baobab testnet.  You have also interacted with the contracts using Caver-js, MetaMask, Klaytn-Contract Wizard to run the full cycle governance process.
+This tutorial guided you through the basics of creating and deploying a set of DAO contracts to mint KIP7 tokens through on-chain governance on the Kaia Kairos testnet.  You have also interacted with the contracts using Caver-js, MetaMask, Kaia-Contract Wizard to run the full cycle governance process.
 
 
 :::info
-If you have any questions, please join our [Discord server](https://discord.io/KlaytnOfficial), or send us an email at developers@klaytn.foundation
+If you have any questions, please join our [Discord server](https://discord.gg/kaiachain), or send us an email at developers@kaia.io
 :::

@@ -11,19 +11,19 @@ As a decentralized oracle service provider, [Chainlink](https://docs.chain.link/
 
 **Direct Funding**: Compared to the subscription method, you must directly fund your consumer contract and ensure there are enough LINK tokens to pay for randomness requests. 
 
-In this tutorial, you will use Chainlink VRF V2 contract to programmatically create a subscription, add a consumer contract and request random values on the Klaytn blockchain.
+In this tutorial, you will use Chainlink VRF V2 contract to programmatically create a subscription, add a consumer contract and request random values on the Kaia blockchain.
 
 
 ## Prerequisites <a id="Prerequisites"></a> 
 
 * [MetaMask](https://metamask.io/download/)
 * [Remix IDE](https://remix.ethereum.org/)
-* [Klaytn Plugin on Remix](https://klaytn.foundation/using-klaytn-plugin-on-remix/)
+* [Kaia Plugin on Remix](https://klaytn.foundation/using-klaytn-plugin-on-remix/)
 * Test KLAY from [Faucet](https://baobab.wallet.klaytn.foundation/faucet)
 
 ### Step 1 – Obtaining test LINK <a id="Step 1 – Obtaining test LINK"></a>
 
-Make sure you have configured [Klaytn Baobab network on MetaMask](https://docs.klaytn.foundation/dapp/tutorials/connecting-metamask#send-klay). You need LINK tokens when requesting randomness, which are available in [Chainlink Faucet](https://faucets.chain.link/).
+Make sure you have configured [Kaia Kairos network on MetaMask](https://docs.kaia.io/docs/build/tutorials/connecting-metamask/#connect-to-kaia-baobab-network-testnet-). You need LINK tokens when requesting randomness, which are available in [Chainlink Faucet](https://faucets.chain.link/).
 
 Click on **Connect wallet** and select **MetaMask**
 
@@ -60,7 +60,7 @@ Now that we have a contract, let’s first compile it.
 
 ![](/images/chainlink/linkCompileContract.png)
 
-After compiling, click on the Klaytn logo on the side panel, and change the environment to **Injected Web3**. A popup will appear to connect to your MetaMask wallet. Select the account you want to connect to and click Next to proceed.
+After compiling, click on the Kaia logo on the side panel, and change the environment to **Injected Web3**. A popup will appear to connect to your MetaMask wallet. Select the account you want to connect to and click Next to proceed.
 
 Select the VRFv2SubscriptionManager Contract and click **Deploy**.
 
@@ -96,11 +96,11 @@ Call the s_randomwords function and pass zero(0) as an argument.
 Congratulations on successfully requesting for random numbers using ChainLink VRF V2 Contracts.
 
 ## Conclusion
-In this tutorial, we saw how to use  Chainlink oracle to get the Random Numbers on Klaytn Testnet (Baobab). If you want more information, visit [Klaytn Docs](https://docs.klaytn.foundation/) and [Chainlink Oracle Docs](https://docs.chain.link/getting-started/conceptual-overview). If you have any questions, visit [Klaytn Forum](https://forum.klaytn.foundation/).
+In this tutorial, we saw how to use  Chainlink oracle to get the Random Numbers on Kaia Testnet (Kairos). If you want more information, visit [Kaia Docs](https://docs.kaia.io/) and [Chainlink Oracle Docs](https://docs.chain.link/getting-started/conceptual-overview). If you have any questions, visit [Kaia Forum](https://forum.klaytn.foundation/).
 
 
 :::info
 
-Chainlink integration is available only in the **Baobab** testnet.
+Chainlink integration is available only in the **Kairos** testnet.
 
 :::

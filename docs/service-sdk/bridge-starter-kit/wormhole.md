@@ -4,7 +4,7 @@ sidebar_label: Wormhole
 ---
 
 # 🌉 Wormhole
-Wormhole is a communication bridge between Klaytn and other top decentralized finance (DeFi) networks. Existing projects, platforms, and communities are able to move tokenized assets seamlessly across blockchains and benefit from Klaytn's high speed and low cost.
+Wormhole is a communication bridge between Kaia and other top decentralized finance (DeFi) networks. Existing projects, platforms, and communities are able to move tokenized assets seamlessly across blockchains and benefit from Kaia's high speed and low cost.
 
 Features of wormhole bridge available in this package are: 
 

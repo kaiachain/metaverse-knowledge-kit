@@ -7,13 +7,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Metaverse Knowledge Kit',
-  tagline: 'Seamlessly build your Metaverse on Klaytn',
+  tagline: 'Seamlessly build your Metaverse on Kaia',
   //@ts-ignore
-  url: process.env.URL,
+  url: "https://metaverse-knowledge-kit.klaytn.foundation/",
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/kaia-logo.png',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -69,12 +69,19 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/klaytn.png',
+      image: 'img/kaia-logo.png',
+      announcementBar: {
+        id: 'docs_archive',
+        content: '<div style="font-size: 13px">📢 Metaverse Knowledge Kit is now live, but <b>some content is still being updated to reflect the transition from Klaytn and may refer to outdated information until July.</b> Thank you for your understanding. 🙏🏻</div>',
+        backgroundColor: '#789806',
+        textColor: '#FFFFFF',
+        isCloseable: true,
+      },
       navbar: {
         title: 'Metaverse Knowledge Kit',
         logo: {
-          alt: 'Klaytn Logo',
-          src: 'img/klaytn.png',
+          alt: 'Kaia Logo',
+          src: 'img/kaia-logo.png',
           target: '_self',
           width: 32,
           height: 42,
@@ -113,8 +120,8 @@ const config = {
                 href: 'https://github.com/klaytn',
               },
               {
-                label: 'Klaytn Docs',
-                href: 'https://docs.klaytn.foundation/',
+                label: 'Kaia Docs',
+                href: 'https://docs.kaia.io/',
               },
               {
                 label: 'Developer Portal',
@@ -135,7 +142,7 @@ const config = {
               },
               {
                 label: 'Discord',
-                href: 'https://discord.io/KlaytnOfficial',
+                href: 'https://discord.gg/kaiachain',
               },
               {
                 label: 'Telegram',

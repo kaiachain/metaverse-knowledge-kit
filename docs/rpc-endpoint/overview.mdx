@@ -9,14 +9,14 @@ import TabItem from '@theme/TabItem';
 
 import CodeBlock from '@theme/CodeBlock';
 
-Individual or corporate developers can access both free public endpoints and premium services through the Klaytn network of RPC providers.
+Individual or corporate developers can access both free public endpoints and premium services through the Kaiachain network of RPC providers.
 However, we urge projects and developers to collaborate with specialized RPC providers who offer highly available, reliable RPCs and are better equipped to meet their needs when building their enterprise metaverse application.
 
 Below is a list of Public RPC Node providers in our ecosystem.
 
 ## Public Endpoint Nodes <a id="Public Endpoint Nodes"> </a>
 
-Public EN allows you to solely focus on building and testing your blockchain product without the distraction of maintaining infrastructure to connect and interact with the Klaytn network.
+Public EN allows you to solely focus on building and testing your blockchain product without the distraction of maintaining infrastructure to connect and interact with the Kaia network.
 
 ### HTTPS  
 
@@ -35,7 +35,7 @@ https://klaytn-baobab-rpc.allthatnode.com:8551
 ```
 
 </TabItem>
-<TabItem value="kf" label="Klaytn Foundation">
+<TabItem value="kf" label="Kaia Foundation">
 
 ```js
 Mainnet 
@@ -54,7 +54,7 @@ https://public-en-baobab.klaytn.net
 
 
 <Tabs>
-<TabItem value="kf" label="Klaytn Foundation">
+<TabItem value="kf" label="Kaia Foundation">
 
 ```js
 Mainnet 
@@ -89,7 +89,7 @@ wss://public-en-baobab.klaytn.net/ws
 
 
 ## Archive Nodes
-In general, a diverse set of nodes ensure that the blockchain network (e.g Klaytn) is secure. These nodes, store and analyze blockchain information, validate the blockchain's state. Each node on the same network can interact with another node to accomplish a variety of tasks.
+In general, a diverse set of nodes ensure that the blockchain network (e.g Kaia) is secure. These nodes, store and analyze blockchain information, validate the blockchain's state. Each node on the same network can interact with another node to accomplish a variety of tasks.
 
 One type of node serving a unique purpose is the archival node, which is responsible for storing the complete historical data of the blockchain. The most current blockchain state is stored by other types, including the full node and the light node.
 
@@ -105,7 +105,7 @@ In order to develop a reputation system in your metaverse application, for insta
 
 
 ### Provider
-**Klaytn Foundation**
+**Kaia Foundation**
 
 <Tabs>
 <TabItem value="kf1" label="HTTPS">
@@ -139,7 +139,7 @@ wss://archive-en.baobab.klaytn.net/ws
 </Tabs>
 
 ## How to run your own Node
-In general public RPC endpoints will have rate limits due to security reasons or the subscription plan might be expensive depending on the service providers. In such case you can opt to run your own node to interact with Klaytn network. 
+In general public RPC endpoints will have rate limits due to security reasons or the subscription plan might be expensive depending on the service providers. In such case you can opt to run your own node to interact with Kaia network. 
 
 If you are an enterprise application and expect huge traffic and worried about stability concerns it would be advisable to run your dedicated rpc nodes. 
 
@@ -147,7 +147,7 @@ If you are an enterprise application and expect huge traffic and worried about s
 
 ### Setting up your own node
 
-Anyone who wants to send transactions or query the state of Klaytn network using [Klaytn APIs](https://github.com/klaytn/klaytn-docs/blob/master/docs/installation-guide/dapp/json-rpc/README.md) needs to do so via an Endpoint Node. Endpoint Nodes are the interface to the Klaytn Network.
+Anyone who wants to send transactions or query the state of Kaia network using [Kaia APIs](https://github.com/klaytn/klaytn-docs/blob/master/docs/installation-guide/dapp/json-rpc/README.md) needs to do so via an Endpoint Node. Endpoint Nodes are the interface to the Kaia Network.
 
 The Endpoint Node install binary comes with the following interfaces and utilities.
 
@@ -155,19 +155,19 @@ The Endpoint Node install binary comes with the following interfaces and utiliti
 
 **Command-line Interface**: Provides account management and node configuration functions. An interactive JavaScript console is also provided, that is attached to the node. JavaScript console implements most of the [caver-js APIs](https://github.com/klaytn/klaytn-docs/blob/master/docs/installation-guide/dapp/sdk/caver-js/README.md)
 
-Setting up your own node means you'll be downloading a copy of the Klaytn blockchain through a client. Thus, you'll need high-end  computers for the job.  You can go for a deep dive into setting up your own Klaytn node with the following documentation. 
+Setting up your own node means you'll be downloading a copy of the Kaia blockchain through a client. Thus, you'll need high-end  computers for the job.  You can go for a deep dive into setting up your own Kaia node with the following documentation. 
 
 
-* [Node Deployment Guide](https://docs.klaytn.foundation/content/installation-guide/deployment)
-* [Run a local Klaytn network](https://klaytn.foundation/how-to-run-a-local-klaytn-network/)
-* [Launch an Endpoint Node](https://docs.klaytn.foundation/content/getting-started/quick-start/launch-an-en)
+* [Node Deployment Guide](https://docs.kaia.io/docs/nodes/)
+* [Run a local Kaia network](https://klaytn.foundation/how-to-run-a-local-klaytn-network/)
+* [Launch an Endpoint Node](https://docs.kaia.io/docs/nodes/endpoint-node/install-endpoint-nodes/)
 
 
 ### Important Note
 
-Rather than syncing from scratch, you can use the snapshots available for mainnet and testnet. You can contact the team via [discord](https://discord.io/KlaytnOfficial) to get the AMI image for the archive node if you are using aws. 
+Rather than syncing from scratch, you can use the snapshots available for mainnet and testnet. You can contact the team via [discord](https://discord.gg/kaiachain) to get the AMI image for the archive node if you are using aws. 
 
 
 :::info
-If you have any questions, please join our [Discord server](https://discord.io/KlaytnOfficial), or send us an email at developers@klaytn.foundation
+If you have any questions, please join our [Discord server](https://discord.gg/kaiachain), or send us an email at developers@kaia.io
 :::

@@ -1,5 +1,5 @@
 ---
-title: ✍️  Klaytn Contracts
+title: ✍️  Kaia Contracts
 sidebar_label: Overview
 ---
 
@@ -19,15 +19,15 @@ Smart contracts also enable developers to upgrade their metaverse applications w
 
 In conclusion, utilizing smart contracts and blockchain technology is crucial for creating a thriving and sustainable metaverse. Smart contracts are essential in the metaverse to increase the security and transparency of transactions in various areas such as eCommerce, real estate, media & entertainment, and gaming. A metaverse powered by smart contracts and blockchain technology requires negligible or no maintenance cost unlike single authority companies such as Meta (Facebook) and Microsoft who face the limitations of data privacy and high infrastructure maintenance costs as they build their metaverses.
 
-## Smart contracts on Klaytn <a id="Smart contracts on Klaytn"></a>
+## Smart contracts on Kaia <a id="Smart contracts on Kaia"></a>
 
-Klaytn currently utilizes [Solidity](https://github.com/ethereum/solidity) as the primary programming language as it is a widely used contract language for Ethereum and has a large user base and an active community.
+Kaia currently utilizes [Solidity](https://github.com/ethereum/solidity) as the primary programming language as it is a widely used contract language for Ethereum and has a large user base and an active community.
 
-[klaytn-contracts](https://github.com/klaytn/klaytn-contracts) is an open-source smart contract library that offers reusable building blocks for developers to quickly and easily use in their Klaytn-based projects. It contains a full suite of standardized smart contract interfaces, libraries, and implementations, enabling developers to inherit and develop applications quickly and safely. 
+[Kaia-contracts](https://github.com/klaytn/klaytn-contracts) is an open-source smart contract library that offers reusable building blocks for developers to quickly and easily use in their Kaia-based projects. It contains a full suite of standardized smart contract interfaces, libraries, and implementations, enabling developers to inherit and develop applications quickly and safely. 
 
-[Klaytn Improvement Proposals](https://kips.klaytn.foundation/) (KIPs) outline the standards for the Klaytn platform, including core protocol specifications, client APIs, and contract standards. Token standards such as [KIP7](https://kips.klaytn.foundation/KIPs/kip-7) (Fungible Tokens), [KIP17](https://kips.klaytn.foundation/KIPs/kip-17) (Non-Fungible Tokens), and [KIP37](https://kips.klaytn.foundation/KIPs/kip-37) (Multi-tokens) are some of the key contract standards for Klaytn-based projects.
+[Kaia Improvement Proposals](https://kips.klaytn.foundation/) (KIPs) outline the standards for the Kaia platform, including core protocol specifications, client APIs, and contract standards. Token standards such as [KIP7](https://kips.klaytn.foundation/KIPs/kip-7) (Fungible Tokens), [KIP17](https://kips.klaytn.foundation/KIPs/kip-17) (Non-Fungible Tokens), and [KIP37](https://kips.klaytn.foundation/KIPs/kip-37) (Multi-tokens) are some of the key contract standards for Kaia-based projects.
 
 
 :::info
-If you have any questions, please join our [Discord server](https://discord.io/KlaytnOfficial), or send us an email at developers@klaytn.foundation
+If you have any questions, please join our [Discord server](https://discord.gg/kaiachain), or send us an email at developers@kaia.io
 :::

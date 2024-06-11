@@ -23,7 +23,7 @@
 }
 
 .heroBg {
-  background-image: url('/static/img/grey-bg.png');
+  background-image: url('/static/img/kaia-bg.png');
   background-position-y: 300px;
 }
 
@@ -48,7 +48,8 @@
   top: -30%;
 }
 .elementRedstairs {
-  width: 25%;
+  width: 75%;
   position: absolute;
-  left: 75%;
+  border-radius: 50%;
+  left: 13%;
 }

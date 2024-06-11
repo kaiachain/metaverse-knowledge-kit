@@ -32,20 +32,20 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '✍️ Klaytn Contracts',
+      label: '✍️ Kaia Contracts',
       collapsed: false,
       link: {
         type: 'generated-index',
       },
       items: [
-        'klaytn-contracts/overview',
+        'kaia-contracts/overview',
         {
           type: 'category',
           label: 'Fungible Token',
           collapsed: true,
           items: [
-            'klaytn-contracts/kip-7/introduction',
-            'klaytn-contracts/kip-7/sdks-and-tutorials',
+            'kaia-contracts/kip-7/introduction',
+            'kaia-contracts/kip-7/sdks-and-tutorials',
           ],
         },
         {
@@ -53,8 +53,8 @@ const sidebars = {
           label: 'Non Fungible Token',
           collapsed: true,
           items: [
-            'klaytn-contracts/kip-17/introduction',
-            'klaytn-contracts/kip-17/sdks-and-tutorials',
+            'kaia-contracts/kip-17/introduction',
+            'kaia-contracts/kip-17/sdks-and-tutorials',
           ],
         },
         {
@@ -62,8 +62,8 @@ const sidebars = {
           label: 'Multi Token',
           collapsed: true,
           items: [
-            'klaytn-contracts/kip-37/introduction',
-            'klaytn-contracts/kip-37/sdks-and-tutorials',
+            'kaia-contracts/kip-37/introduction',
+            'kaia-contracts/kip-37/sdks-and-tutorials',
           ],
         },
         {
@@ -71,9 +71,9 @@ const sidebars = {
           label: 'DAO Contracts',
           collapsed: true,
           items: [
-            'klaytn-contracts/dao-contracts/introduction', 
-            'klaytn-contracts/dao-contracts/sdks-and-tutorials',
-            'klaytn-contracts/dao-contracts/governance-tools'
+            'kaia-contracts/dao-contracts/introduction', 
+            'kaia-contracts/dao-contracts/sdks-and-tutorials',
+            'kaia-contracts/dao-contracts/governance-tools'
           ]
         },
         {
@@ -81,8 +81,8 @@ const sidebars = {
           label: 'Payment Splitter Contract',
           collapsed: true,
           items: [
-            'klaytn-contracts/payment-splitter/introduction', 
-            'klaytn-contracts/payment-splitter/sdks-and-tutorials',
+            'kaia-contracts/payment-splitter/introduction', 
+            'kaia-contracts/payment-splitter/sdks-and-tutorials',
           ]
         },
         {
@@ -90,18 +90,10 @@ const sidebars = {
           label: 'NFT Royalty',
           collapsed: true,
           items: [
-            'klaytn-contracts/nft-royalty/introduction',
+            'kaia-contracts/nft-royalty/introduction',
           ]
         },
-        {
-          type: 'category',
-          label: 'NFT with Operator FIlter',
-          collapsed: true,
-          items: [
-            'klaytn-contracts/nft-with-operator-filter/introduction',
-          ]
-        },
-        'klaytn-contracts/tools-and-sdks',
+        'kaia-contracts/tools-and-sdks',
       ],
     },
     {

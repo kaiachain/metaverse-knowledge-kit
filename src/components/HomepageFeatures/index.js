@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/hands.svg').default,
     description: (
       <>
-        Get started on your Metaverse-building journey with our all-in-one <b>Metaverse Knowledge Kit</b> carefully crafted by our Klaytn Developers.
+        Get started on your Metaverse-building journey with our all-in-one <b>Metaverse Knowledge Kit</b> carefully crafted by our Kaia Developers.
       </>
     ),
   },
