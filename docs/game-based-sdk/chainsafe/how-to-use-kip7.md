@@ -5,7 +5,7 @@ sidebar_label: Create KIP7 tokens
 
 # 💎 How to create KIP7 tokens <a id="How to use the KIP7 token"></a>
 
-In this section you will see how to build a Unity project using the KIP7 (ERC-20) token standard on Klaytn.
+In this section you will see how to build a Unity project using the KIP7 (ERC-20) token standard on Kaia.
 
 
 ## Getting Started <a id="Getting Started"></a>
@@ -39,7 +39,7 @@ Go to **File** → **Build Settings** → **Add Open Scenes**. The SampleScene w
 
 ## Create your Contract <a id="Create your Contract"></a>
 
-* Open [Remix IDE](https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null), install the [Klaytn Remix plugin](https://klaytn.foundation/using-klaytn-plugin-on-remix/) then paste the code below:
+* Open [Remix IDE](https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null), install the [Kaia Remix plugin](https://klaytn.foundation/using-klaytn-plugin-on-remix/) then paste the code below:
 
 ```javascript
 // SPDX-License-Identifier: MIT
@@ -60,7 +60,7 @@ contract MyToken is KIP7, Ownable {
 
 ```
 
-* Compile your contract and deploy it to baobab testnet. Get your faucet [here](https://baobab.wallet.klaytn.foundation/faucet).
+* Compile your contract and deploy it to kairos testnet. Get your faucet [here](https://baobab.wallet.klaytn.foundation/faucet).
 
 
 ## Create your C# script on Unity <a id="Create your C# script on Unity"></a>
@@ -280,7 +280,7 @@ Link each button to the corresponding function in the contract. E.g here, we lin
 
 ![](/images/chainsafe/26_linkButton_toScripts.png)
 
-Change the `chainId` of the network in the WebGL Templates folder to 1001 to connect to baobab testnet
+Change the `chainId` of the network in the WebGL Templates folder to 1001 to connect to kairos testnet
 
 ![](/images/chainsafe/27_kip7_setChainId.png)
 
@@ -306,5 +306,5 @@ To test the `Mint` and `SafeTransfer` function, click on the corresponding butto
 
 
 :::info
-If you have any questions, please join our [Discord server](https://discord.io/KlaytnOfficial), or send us an email at developers@klaytn.foundation
+If you have any questions, please join our [Discord server](https://discord.gg/kaiachain), or send us an email at developers@kaia.io
 :::

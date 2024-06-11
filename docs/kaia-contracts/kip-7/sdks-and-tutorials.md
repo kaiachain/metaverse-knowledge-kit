@@ -5,13 +5,13 @@ sidebar_label: Tutorial
 
 # 💻 KIP7 Tutorial
 
-KIP7 contracts can either be deployed and interacted with using Remix IDE or in your local development environment. After the deployment of contracts, you ll need to interact or call its functions. Klaytn provides developers with a javascript library: [caver-js](https://docs.klaytn.foundation/content/dapp/sdk/caver-js), to interact with Klaytn node and also with smart contracts on Klaytn.
+KIP7 contracts can either be deployed and interacted with using Remix IDE or in your local development environment. After the deployment of contracts, you ll need to interact or call its functions. Kaia provides developers with a javascript library: [caver-js](https://docs.kaia.io/docs/references/sdk/caver-js/), to interact with Kaia node and also with smart contracts on Kaia.
 
 Caver-js requires contract ABI and contract address to interact with smart contract and for the purpose of this tutorial we would make use of Remix IDE to quickly and easily generate ABI and contract address. At the end of this tutorial, you'll be able to interact with an already deployed KIP7 contract using caver-js.
 
 ## 1. Prerequisites <a id="KIP7 Tutorial Prerequsite"></a>
 
-* [Remix IDE](https://docs.klaytn.foundation/content/dapp/tutorials/connecting-remix#connecting-klaytn-remix-using-kaikas) and [Kaikas](https://kaikas.zendesk.com/hc/en-us/articles/6657796272793-How-do-I-install-PC-Kaikas-)
+* [Remix IDE](https://docs.kaia.io/docs/build/tutorials/connecting-remix/#connecting-kaia---remix-using-kaikas-) and [Kaikas](https://kaikas.zendesk.com/hc/en-us/articles/6657796272793-How-do-I-install-PC-Kaikas-)
 * Enough test KLAY from the [faucet](https://baobab.wallet.klaytn.foundation/faucet)
 * [Node Js and NPM](https://kinsta.com/blog/how-to-install-node-js/)
 
@@ -19,7 +19,7 @@ In this tutorial, you will learn how to deploy a KIP7 smart contract and interac
 
 ## 2. Deploying KIP 7 Smart contract <a id="Deploying KIP 7 Smart contract"></a>
 
-The contract below defines a basic KIP7 token with the name "MyToken", the symbol "MTK", and 18 decimal places. The contract uses the KIP7 contract from the [Klaytn contracts library](https://github.com/klaytn/klaytn-contracts). The initial supply of the token is set in the contract's constructor, where we are minting 1 million tokens and sending them to the contract's creator. The mintToken function allows you to mint a certain amount of token to an address.
+The contract below defines a basic KIP7 token with the name "MyToken", the symbol "MTK", and 18 decimal places. The contract uses the KIP7 contract from the [Kaia contracts library](https://github.com/klaytn/klaytn-contracts). The initial supply of the token is set in the contract's constructor, where we are minting 1 million tokens and sending them to the contract's creator. The mintToken function allows you to mint a certain amount of token to an address.
 
 ```javascript title="KIP7Token.sol"
 
@@ -41,7 +41,7 @@ contract KIP7Token is KIP7, Ownable {
 
 ```
 
-Refer to this [guide](https://docs.klaytn.foundation/content/dapp/tutorials/connecting-remix#connecting-klaytn-remix-using-kaikas) to deploy the above contract on Klaytn using Remix IDE.
+Refer to this [guide](https://docs.kaia.io/docs/build/tutorials/connecting-remix/#connecting-kaia---remix-using-kaikas-) to deploy the above contract on Kaia using Remix IDE.
 
 After you have successfully deployed your token contract, you should be able to copy the contract’s ABI and address as shown in the below pic as reference. 
 
@@ -77,7 +77,7 @@ Paste the code below in your newly created `kip7Caver.js` file. Code below illus
 
 1. Imports caver.js and the contract ABI, which defines the functions and parameters of the KIP7 contract.
 2. Initialize caver.js and the KIP7 contract by providing the contract address.
-3. Set the contract address, create and add keyring to enable users sign on using their own Klaytn account. 
+3. Set the contract address, create and add keyring to enable users sign on using their own Kaia account. 
 4. Call a `balanceOf` function to get a specified address token balance. 
 5. Mint 100000 tokens to a  specified account given the sender of this transaction is the creator of the contract. 
 6. Transfer 500  tokens from the current account to another account using the `transfer` function of the contract.
@@ -153,7 +153,7 @@ node ./scripts/kip7Caver.js.
 ```
 
 :::info
-If you have any questions, please join our [Discord server](https://discord.io/KlaytnOfficial), or send us an email at developers@klaytn.foundation
+If you have any questions, please join our [Discord server](https://discord.gg/kaiachain), or send us an email at developers@kaia.io
 :::
 
 

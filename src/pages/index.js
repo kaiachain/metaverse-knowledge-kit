@@ -18,12 +18,8 @@ function HomepageHeader() {
     >
       <div className={clsx(styles.heroElements)}>
         <img
-          className={clsx(styles.elementSphere)}
-          src="/img/klaytn-sphere.png"
-        />
-        <img
           className={clsx(styles.elementRedstairs)}
-          src="/img/red-stairs.png"
+          src="/img/thum_05_D.png"
         />
       </div>
       <div className={clsx('container', styles.heroContainer)}>

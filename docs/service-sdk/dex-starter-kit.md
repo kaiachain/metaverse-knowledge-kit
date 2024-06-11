@@ -5,7 +5,7 @@ sidebar_label: DEX Starter Kit
 
 # Overview
 
-A decentralized exchange (DEX) is a peer-to-peer marketplace where transactions occur directly between crypto traders. Klaytn has an opensource code for the DEX infrastructure containing features like fungible token swapping, staking and liquidity provision, token-based governance, and token minting.
+A decentralized exchange (DEX) is a peer-to-peer marketplace where transactions occur directly between crypto traders. Kaia has an opensource code for the DEX infrastructure containing features like fungible token swapping, staking and liquidity provision, token-based governance, and token minting.
 
 This SDK includes the integration of [@klaytn/dex-contracts](https://github.com/klaytn/klaytn-dex-contracts/blob/dev/docs/dex-specification.md) in the starter kit to execute all the admin functionalities and basic user operations via the SDK.
 
@@ -37,7 +37,7 @@ In order to execute the functions, the dex-contracts needs to be deployed either
 Also, make sure to fulfill the following prerequisites
 
 1. You must have enough supply of KLAY & other utility tokens to execute all the functions
-2. Deployment of the following DEX contracts on Klaytn Mainnet OR Testnet is required. ([Ref](https://github.com/klaytn/klaytn-dex-contracts/blob/dev/README.md))
+2. Deployment of the following DEX contracts on Kaia Mainnet OR Testnet is required. ([Ref](https://github.com/klaytn/klaytn-dex-contracts/blob/dev/README.md))
    - DexFactory
    - DexRouter
    - DexToken
@@ -47,7 +47,7 @@ Also, make sure to fulfill the following prerequisites
    - WKLAY
    - Some [KIP7](https://kips.klaytn.foundation/KIPs/kip-7) and [ERC20](https://eips.ethereum.org/EIPS/eip-20) utility tokens.
 
-Here is a [list](./dex_contracts.json) of addresses which is already deployed in Baobab with MultiSig contract as owner. Its recommended to deploy your own contracts in Baobab for testing to execute all the functions as the privateKey used to deploy these contracts will be the admin.
+Here is a [list](./dex_contracts.json) of addresses which is already deployed in Kairos with MultiSig contract as owner. Its recommended to deploy your own contracts in Kairos for testing to execute all the functions as the privateKey used to deploy these contracts will be the admin.
 
 ## Usage
 
@@ -320,5 +320,5 @@ main();
 Similary you can use other functions defined in the module.
 
 :::info
-If you have any questions, please join our [Discord server](https://discord.io/KlaytnOfficial), or send us an email at developers@klaytn.foundation
+If you have any questions, please join our [Discord server](https://discord.gg/kaiachain), or send us an email at developers@kaia.io
 :::

@@ -5,7 +5,7 @@ sidebar_label: Create KIP17 tokens
 
 # 👑 How to create KIP17 tokens <a id="How to use the KIP17 token"></a>
 
-In this section you will see how to build a Unity project using the KIP17 (ERC-721) token standard on Klaytn.
+In this section you will see how to build a Unity project using the KIP17 (ERC-721) token standard on Kaia.
 
 ## Getting Started <a id="Getting Started"></a>
 
@@ -38,7 +38,7 @@ Go to **File** → **Build Settings** → **Add Open Scenes**. The SampleScene w
 
 # Create your contract <a id="Create your contract"></a>
 
-* Open [Remix IDE](https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null), install the [Klaytn Remix plugin](https://klaytn.foundation/using-klaytn-plugin-on-remix/) then paste the code below:
+* Open [Remix IDE](https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null), install the [Kaia Remix plugin](https://klaytn.foundation/using-klaytn-plugin-on-remix/) then paste the code below:
 
 
 ```javascript
@@ -107,7 +107,7 @@ contract HappyMonkey is KIP17, KIP17Enumerable {
 
 > Find the ERC721 source code [here](https://github.com/davidrazmadzeExtra/ERC721_NFT/blob/main/HappyMonkey.sol)
 
-* Compile your contract and deploy it to baobab testnet (get your faucet [here](https://baobab.wallet.klaytn.foundation/faucet)).
+* Compile your contract and deploy it to kairos testnet (get your faucet [here](https://baobab.wallet.klaytn.foundation/faucet)).
 
 # Create your C# script on Unity  <a id="Create your C# script on Unity"></a>
 
@@ -229,5 +229,5 @@ Here are the details of the transaction on [Klaytnscope](https://baobab.scope.kl
 
 
 :::info
-If you have any questions, please join our [Discord server](https://discord.io/KlaytnOfficial), or send us an email at developers@klaytn.foundation
+If you have any questions, please join our [Discord server](https://discord.gg/kaiachain), or send us an email at developers@kaia.io
 :::

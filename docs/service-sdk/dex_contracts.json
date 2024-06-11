@@ -1,6 +1,6 @@
 {
     "network": {
-        "chainName": "Klaytn Baobab",
+        "chainName": "Klaytn Kairos",
         "chainId": 1001,
         "rpcUrl": "https://api.baobab.klaytn.net:8651",
         "blockExplorerUrl": "https://baobab.scope.klaytn.com"

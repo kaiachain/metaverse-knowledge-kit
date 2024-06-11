@@ -5,7 +5,7 @@ sidebar_label: Create KIP37 tokens
 
 # 🎏 How to create KIP37 tokens <a id="How to use the KIP37 token"></a>
 
-In this section you will see how to build a Unity project using the KIP37 (ERC-1155) token standard on Klaytn.
+In this section you will see how to build a Unity project using the KIP37 (ERC-1155) token standard on Kaia.
 
 ## Getting Started <a id="Getting Started"></a>
 
@@ -39,7 +39,7 @@ Go to **File** → **Build Settings** → **Add Open Scenes**. The SampleScene w
 ## Create your Contract <a id="Create your Contract"></a>
 
 
-* Open [Remix IDE](https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null), install the [Klaytn Remix plugin](https://klaytn.foundation/using-klaytn-plugin-on-remix/) then paste the code below:
+* Open [Remix IDE](https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null), install the [Kaia Remix plugin](https://klaytn.foundation/using-klaytn-plugin-on-remix/) then paste the code below:
 
 ```java
 
@@ -167,5 +167,5 @@ Here are the details of the transaction on [Klaytnscope](https://baobab.scope.kl
 
 
 :::info
-If you have any questions, please join our [Discord server](https://discord.io/KlaytnOfficial), or send us an email at developers@klaytn.foundation
+If you have any questions, please join our [Discord server](https://discord.gg/kaiachain), or send us an email at developers@kaia.io
 :::

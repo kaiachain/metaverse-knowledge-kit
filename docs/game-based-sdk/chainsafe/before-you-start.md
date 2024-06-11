@@ -7,20 +7,20 @@ sidebar_label: Before you start
 
 To get started, here are some details you should consider while reading the documentation.
 
-## Klaytn Gas Fee <a id="Klaytn Gas Fee"></a>
+## Kaia Gas Fee <a id="Kaia Gas Fee"></a>
 
-Klaytn has a fixed gas fee, so make sure to do the following steps to setting up your Metamask:
+Kaia has a fixed gas fee, so make sure to do the following steps to setting up your Metamask:
 
 * Click on ***Turn on Enhanced Gas Fee UI*** in Settings to set gas fee
 * Set the ***Enable Enhanced Gas Fee UI*** toggle to *ON* and exit Settings.
   
-Click [here](https://docs.klaytn.foundation/dapp/tutorials/connecting-metamask#send-klay) for more details.
+Click [here](https://docs.kaia.io/docs/build/tutorials/connecting-metamask/#step-4-send-klay-) for more details.
 
-## Klaytn RPC URL and Chain ID <a id="Klaytn RPC URL and Chain ID"></a>
+## Kaia RPC URL and Chain ID <a id="Kaia RPC URL and Chain ID"></a>
 
-*Klaytn mainnet: RPC URL* = https://public-node-api.klaytnapi.com/v1/cypress Chain ID = 8217
+*Kaia mainnet: RPC URL* = https://public-node-api.klaytnapi.com/v1/cypress Chain ID = 8217
 
-*Klaytn testnet: RPC URL* = https://api.baobab.klaytn.net:8651/ Chain ID = 1001
+*Kaia testnet: RPC URL* = https://api.baobab.klaytn.net:8651/ Chain ID = 1001
 
 ## ABI formatting <a id="ABI Formatting"></a>
 The ABI has a special formatting. Replace the " with \" , otherwise it will not be recognise by the SDK.
@@ -68,5 +68,5 @@ Window -> Package Manager -> My Assets -> [JSON.NET](http://json.net/) For Unity
 ![](/images/chainsafe/5_install_jsonnet.png)
 
 :::info
-If you have any questions, please join our [Discord server](https://discord.io/KlaytnOfficial), or send us an email at developers@klaytn.foundation
+If you have any questions, please join our [Discord server](https://discord.gg/kaiachain), or send us an email at developers@kaia.io
 :::

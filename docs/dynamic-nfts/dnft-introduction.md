@@ -14,7 +14,7 @@ Consider a blockchain game where in-game avatar NFTs store the avatar's skills a
 ***Dynamic NFTs*** (dNFTs) are a type of non-fungible token that has smart contract logic integrated into it. This smart contract enables the token to automatically modify its metadata based on both on-chain and off-chain conditions. These conditions can be real-time sports scores, weather results, and other external factors such as the price of a currency. In the context of dNFTs, the smart contract acts as a controlling unit, providing the underlying NFT with specific instructions on when and how to modify its metadata.
 
 ## How does a dNFT work? <a id="How does a dNFT work"></a>
-Compared to static NFTs, dynamic NFTs can change their metadata based on external conditions. This is achieved with the multi-token standard, which is specified in KIP37 on the Klaytn blockchain platform. Dynamic NFTs utilize smart contracts to dictate how and when the metadata of a dNFT should change based on a triggering event, which can be sourced from external data through an oracle or an on-chain event.  
+Compared to static NFTs, dynamic NFTs can change their metadata based on external conditions. This is achieved with the multi-token standard, which is specified in KIP37 on the Kaia blockchain platform. Dynamic NFTs utilize smart contracts to dictate how and when the metadata of a dNFT should change based on a triggering event, which can be sourced from external data through an oracle or an on-chain event.  
 
 However, to make the changes visible to non-technical users, most dynamic NFTs require some form of metadata change implementation. These changes are typically initiated by encoded smart contract logic that takes both on-chain and off-chain data into account. 
 
@@ -36,5 +36,5 @@ As the dNFT ecosystem evolves and NFTs become more closely integrated with the r
 
 
 :::info
-If you have any questions, please join our [Discord server](https://discord.io/KlaytnOfficial), or send us an email at developers@klaytn.foundation
+If you have any questions, please join our [Discord server](https://discord.gg/kaiachain), or send us an email at developers@kaia.io
 :::

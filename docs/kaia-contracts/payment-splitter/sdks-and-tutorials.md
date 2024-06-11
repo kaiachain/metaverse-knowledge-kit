@@ -7,13 +7,13 @@ In this guide, you will implement a PaymentSplitter into an  NFT contract using 
 
 ## 1. Prerequisites <a id="Prerequsite"></a> 
 
-* [Remix IDE](https://docs.klaytn.foundation/content/dapp/tutorials/connecting-remix#connecting-klaytn-remix-using-kaikas) and [Kaikas](https://kaikas.zendesk.com/hc/en-us/articles/6657796272793-How-do-I-install-PC-Kaikas-)
+* [Remix IDE](https://docs.kaia.io/docs/build/tutorials/connecting-remix/#connecting-kaia---remix-using-kaikas-) and [Kaikas](https://kaikas.zendesk.com/hc/en-us/articles/6657796272793-How-do-I-install-PC-Kaikas-)
 * Enough test KLAY from [faucet](https://baobab.wallet.klaytn.foundation/faucet)
 * [Node Js and NPM](https://kinsta.com/blog/how-to-install-node-js/)
 
 ## 2. Deploying NFT - Payment Splitter Smart contract <a id="Deploying NFT - Payment Splitter Smart contract"></a> 
 
-This code below defines a KIP17 token and Payment Splitter contract. These contracts were derived from the [Klaytn contracts library](https://github.com/klaytn/klaytn-contracts).
+This code below defines a KIP17 token and Payment Splitter contract. These contracts were derived from the [Kaia contracts library](https://github.com/klaytn/klaytn-contracts).
 
 The contract has a constructor that initializes the KIP17 contract with the name “HappyMonkey“ and symbol “HM”. It also initializes the paymentSplitter contract with the payee and shares arguments respectively.
 
@@ -73,7 +73,7 @@ contract HappyMonkey is KIP17, KIP17Enumerable, PaymentSplitter {
 
 ```
 
-Refer to this [guide](https://docs.klaytn.foundation/content/dapp/tutorials/connecting-remix#connecting-klaytn-remix-using-kaikas) to deploy the above contract on Klaytn using Remix IDE.
+Refer to this [guide](https://docs.kaia.io/docs/build/tutorials/connecting-remix/#connecting-kaia---remix-using-kaikas-) to deploy the above contract on Kaia using Remix IDE.
 
 After you have successfully deployed your token contract, you should be able to copy the contract’s ABI and address.
 
@@ -96,7 +96,7 @@ Paste the code below in your newly created `paymentSplitter.js` file. The code i
 
 First, we import caver.js and the contract ABI, which defines the functions and parameters of the payment splitter contract. Then, we initialize caver.js and the KIP17 contract by providing the contract address.
 
-Next we set the contract address, create and add keyring to enable users sign on using their own Klaytn account. Then, we call a safeMint function to mint tokens to a specified account. Next we call the release function to enable the payee to pull funds from the contract.
+Next we set the contract address, create and add keyring to enable users sign on using their own Kaia account. Then, we call a safeMint function to mint tokens to a specified account. Next we call the release function to enable the payee to pull funds from the contract.
 
 Finally, we checked the amount released to the payee using the `released` function.
 

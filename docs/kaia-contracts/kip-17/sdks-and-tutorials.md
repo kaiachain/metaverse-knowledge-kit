@@ -8,12 +8,12 @@ In this guide, you will deploy a KIP17 contracts on Remix IDE and, after deploym
 
 ## 1. Prerequisites <a id="KIP17 Tutorial Prerequsite"></a>
 
-* [Remix IDE](https://docs.klaytn.foundation/content/dapp/tutorials/connecting-remix#connecting-klaytn-remix-using-kaikas) and [Kaikas](https://kaikas.zendesk.com/hc/en-us/articles/6657796272793-How-do-I-install-PC-Kaikas-)
+* [Remix IDE](https://docs.kaia.io/docs/build/tutorials/connecting-remix/) and [Kaikas](https://kaikas.zendesk.com/hc/en-us/articles/6657796272793-How-do-I-install-PC-Kaikas-)
 * Enough test KLAY from [faucet](https://baobab.wallet.klaytn.foundation/faucet)
 * [Node Js and NPM](https://kinsta.com/blog/how-to-install-node-js/)
 
 ## 2. Deploying KIP 17 Smart contract <a id="Deploying KIP 17 Smart contract"></a>
-The code below defines a KIP17 token called. The contract uses the `KIP17` and `KIP17Enumerable` contracts from the [Klaytn contracts library](https://github.com/klaytn/klaytn-contracts), as well as the `Counters` and `Ownable` contract for managing token ID counters and access control
+The code below defines a KIP17 token called. The contract uses the `KIP17` and `KIP17Enumerable` contracts from the [Kaia contracts library](https://github.com/klaytn/klaytn-contracts), as well as the `Counters` and `Ownable` contract for managing token ID counters and access control
 
 The contract has a constructor that initializes the KIP17 contract with the name "HappyMonkey" and the symbol "HM". It also increments the token ID counter to start at 1 (the default value is 0).
 
@@ -82,7 +82,7 @@ contract HappyMonkey is KIP17, KIP17Enumerable, Ownable{
 
 ```
 
-Refer to this [guide](https://docs.klaytn.foundation/content/dapp/tutorials/connecting-remix#connecting-klaytn-remix-using-kaikas) to deploy the above contract on Klaytn using Remix IDE.
+Refer to this [guide](https://docs.kaia.io/docs/build/tutorials/connecting-remix/#connecting-kaia---remix-using-metamask-) to deploy the above contract on Kaia using Remix IDE.
 
 After you have successfully deployed your token contract, you should be able to copy the contract’s ABI and address. 
 
@@ -106,7 +106,7 @@ Paste the code below in your newly created `kip17Caver.js` file. The code illust
 
 1. First, We import caver.js and the contract ABI, which defines the functions and parameters of the KIP7 contract. 
 2. We initialize caver.js and the KIP7 contract by providing the contract address.
-3. Set the contract address, create and add keyring to enable users sign on using their own Klaytn account. 
+3. Set the contract address, create and add keyring to enable users sign on using their own Kaia account. 
 4. Call a balanceOf function to get a specified address token balance. 
 5. Mint tokens to a specified account given the sender of this transaction is the creator of the contract. 
 6. Finally, we transfer tokens from the current account to another account given the token id using the `safeTransferFrom`
@@ -181,5 +181,5 @@ node ./scripts/kip17Caver.js
 ```
 
 :::info
-If you have any questions, please join our [Discord server](https://discord.io/KlaytnOfficial), or send us an email at developers@klaytn.foundation
+If you have any questions, please join our [Discord server](https://discord.gg/kaiachain), or send us an email at developers@kaia.io
 :::

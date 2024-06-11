@@ -9,13 +9,13 @@ sidebar_label: SupraOracles VRF Tutorial
 
 With SupraOracles, your smart contract can get secure and verifiable random numbers. Supra Verifiable Random Functions (VRFs) provides smart contracts with a secure and decentralized source of randomness that is unbiasable, unpredictable, and publicly verifiable. 
 
-In this tutorial, you will use Supra VRF to request random numbers on the Klaytn blockchain using Remix IDE.
+In this tutorial, you will use Supra VRF to request random numbers on the Kaia blockchain using Remix IDE.
 
 ## Prerequisites <a id="Prerequisites"></a> 
 
 * [MetaMask](https://metamask.io/download/)
 * [Remix IDE](https://remix.ethereum.org/)
-* [Klaytn Plugin on Remix](https://klaytn.foundation/using-klaytn-plugin-on-remix/)
+* [Kaia Plugin on Remix](https://klaytn.foundation/using-klaytn-plugin-on-remix/)
 * Test KLAY from [Faucet](https://baobab.wallet.klaytn.foundation/faucet)
 
 ## Getting Started
@@ -38,7 +38,7 @@ This interface will help the consumer contract interact with the Supra Router co
 
 Contracts that need random numbers should utilize the Supra Router Contract. In order to do that, they need to create an interface and bind it to the on-chain address of the Supra Router contract. 
 
-> For _Klatyn Baobab TestNet_, the address is: 0x473ab8E0FC37CFf3c64ee72C2Aecf3925c2EC086
+> For _Klatyn Kairos TestNet_, the address is: 0x473ab8E0FC37CFf3c64ee72C2Aecf3925c2EC086
 
 We’ll store the address within the constructor and use it later to interact with the interface.
 
@@ -98,7 +98,7 @@ Once Supra generates the random number and it is verified by the on-chain logic 
 * Click on `File Explorer` tab, create a new file named `demoSupraVRF.sol` in the contracts folder
 * Paste the code below in your newly created file
 * In Remix, click **Compile contract**.
-* Click the Klaytn tab on your left having installed the plugin
+* Click the Kaia tab on your left having installed the plugin
 * Select **Environment** > **Injected Provider** - **MetaMask**.
 * In **Contract**, select your contract. For example, SampleSupraVRF.
 * Click **Deploy**.
@@ -151,9 +151,9 @@ To get our random number, we have to first request for random number by calling 
 ![](/images/supraOracles/viewRngUser.png)
 
 ## Conclusion
-You have successfully requested for a random number using SupraOracles VRF on Klaytn Baobab TestNet. For additional tutorials and guides based on example use-cases, please refer to the [SupraOracles Docs](https://supraoracles.com/docs/additional-guides).  If you want more information, visit [Klaytn Docs](https://docs.klaytn.foundation/) and [SupraOracles Docs](https://supraoracles.com/docs/overview). If you have any questions, visit [Klaytn Forum](https://forum.klaytn.foundation/).
+You have successfully requested for a random number using SupraOracles VRF on Kaia Kairos TestNet. For additional tutorials and guides based on example use-cases, please refer to the [SupraOracles Docs](https://supraoracles.com/docs/additional-guides).  If you want more information, visit [Kaia Docs](https://docs.kaia.io/) and [SupraOracles Docs](https://supraoracles.com/docs/overview). If you have any questions, visit [Kaia Forum](https://forum.klaytn.foundation/).
 
 
 :::info
-SupraOracle integration is available only in the **Baobab** testnet.
+SupraOracle integration is available only in the **Kairos** testnet.
 :::

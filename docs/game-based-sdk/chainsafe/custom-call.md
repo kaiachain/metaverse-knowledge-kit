@@ -5,7 +5,7 @@ sidebar_label: Custom Call
 
 # ⚡ Custom Call <a id="Custom Call"></a>
 
-In this section you will see how to get the balance of a given address on Klaytn mainnet, using a RPC provider.
+In this section you will see how to get the balance of a given address on Kaia mainnet, using a RPC provider.
 
 Start by creating a new project by following the steps at the section [Create a new Unity project](./create-a-new-unity-project.md). Make sure to install all dependencies to fix all bugs.
 
@@ -52,17 +52,17 @@ public class CustomCallExample : MonoBehaviour
 
 ```
 
-Edit the network chainID under **Assets** → **WebGLTemplates** → **Web3GL-2020x** → **network.js**. Set the *window.web3ChainId* to **8217** (Klaytn mainnet).
+Edit the network chainID under **Assets** → **WebGLTemplates** → **Web3GL-2020x** → **network.js**. Set the *window.web3ChainId* to **8217** (Kaia mainnet).
 
 Run the script by clicking on the ▶️ button above the scene.
 
 Open the console to see the result.
 
-The console shows the balance of the given contract on Klaytn mainnet.
+The console shows the balance of the given contract on Kaia mainnet.
 
 ![](/images/chainsafe/11_edit-networkjs.png)
 
 
 :::info
-If you have any questions, please join our [Discord server](https://discord.io/KlaytnOfficial), or send us an email at developers@klaytn.foundation
+If you have any questions, please join our [Discord server](https://discord.gg/kaiachain), or send us an email at developers@kaia.io
 :::
