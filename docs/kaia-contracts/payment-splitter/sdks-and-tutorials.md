@@ -8,27 +8,27 @@ In this guide, you will implement a PaymentSplitter into an  NFT contract using 
 ## 1. Prerequisites <a id="Prerequsite"></a> 
 
 * [Remix IDE](https://docs.kaia.io/docs/build/tutorials/connecting-remix/#connecting-kaia---remix-using-kaikas-) and [Kaikas](https://kaikas.zendesk.com/hc/en-us/articles/6657796272793-How-do-I-install-PC-Kaikas-)
-* Enough test KLAY from [faucet](https://baobab.wallet.klaytn.foundation/faucet)
+* Enough test KAIA from [faucet](https://faucet.kaia.io/)
 * [Node Js and NPM](https://kinsta.com/blog/how-to-install-node-js/)
 
 ## 2. Deploying NFT - Payment Splitter Smart contract <a id="Deploying NFT - Payment Splitter Smart contract"></a> 
 
-This code below defines a KIP17 token and Payment Splitter contract. These contracts were derived from the [Kaia contracts library](https://github.com/klaytn/klaytn-contracts).
+This code below defines a KIP17 token and Payment Splitter contract. These contracts were derived from the [Kaia contracts library](https://github.com/kaiachain/kaia-contracts).
 
 The contract has a constructor that initializes the KIP17 contract with the name “HappyMonkey“ and symbol “HM”. It also initializes the paymentSplitter contract with the payee and shares arguments respectively.
 
-The safeMint function allows users to mint new tokens provided that the total supply is less than the maximum limit and the user sends at least the minimum required amount of KLAY.
+The safeMint function allows users to mint new tokens provided that the total supply is less than the maximum limit and the user sends at least the minimum required amount of KAIA.
 
-KLAY is sent  to the contracts when a user mints new tokens, and the payee can now pull money from the contracts by calling the `release` function depending on each payee's shares.
+KAIA is sent  to the contracts when a user mints new tokens, and the payee can now pull money from the contracts by calling the `release` function depending on each payee's shares.
 
 ```javascript title="NFTPaymentSplitter.sol"
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "@klaytn/contracts/KIP/token/KIP17/KIP17.sol";
-import "@klaytn/contracts/KIP/token/KIP17/extensions/KIP17Enumerable.sol";
-import "@klaytn/contracts/utils/Counters.sol";
-import "@klaytn/contracts/finance/PaymentSplitter.sol";
+import "@kaiachain/contracts/KIP/token/KIP17/KIP17.sol";
+import "@kaiachain/contracts/KIP/token/KIP17/extensions/KIP17Enumerable.sol";
+import "@kaiachain/contracts/utils/Counters.sol";
+import "@kaiachain/contracts/finance/PaymentSplitter.sol";
 
 contract HappyMonkey is KIP17, KIP17Enumerable, PaymentSplitter {
 
@@ -108,7 +108,7 @@ const Caver = require('caver-js')
 const contractABI = require("../abi/paymentSplitter.json")
 
 // Initialize caver.js and the paymentSplitter contract
-const caver = new Caver('https://api.baobab.klaytn.net:8651/')
+const caver = new Caver('https://public-en-kairos.node.kaia.io')
 const contractAddr = "paste contract address"
 const contract = caver.contract.create(contractABI, contractAddr);
 

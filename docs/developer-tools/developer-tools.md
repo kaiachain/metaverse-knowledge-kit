@@ -48,9 +48,9 @@ A wallet is a digital software that stores private and public keys and keeps tra
 
 <!-- ### Open Source Wallets <a id="Open Source Wallets"></a>
 
-The Klaytn ecosystem has open-source wallets that developers can easily integrate with their dApp and also tweak additional features according to their needs. 
+The Kaia ecosystem has open-source wallets that developers can easily integrate with their dApp and also tweak additional features according to their needs. 
 
-* [Oko Wallet](https://github.com/madfish-solutions/oko-wallet) - is a non-custodial EVM multi-chain wallet that supports the Klaytn network and is available for browser extensions, iOS applications and Android applications. -->
+* [Oko Wallet](https://github.com/madfish-solutions/oko-wallet) - is a non-custodial EVM multi-chain wallet that supports the Kaia chain and is available for browser extensions, iOS applications and Android applications. -->
 
 ## Explorers <a id="Explorer"></a>
 
@@ -70,7 +70,7 @@ Kaia supports the following explorers:
 ## SDKs and API Libraries <a id="SDKs and API Libraries"></a>
 For your metaverse application to interact with the Kaia blockchain (i.e., read on-chain data or send transactions on-chain), it must be connected to a Kaia node. To connect to a Kaia node, Kaia provides several convenient libraries that will teach you how to do so: 
 
-* [Caver-js](https://github.com/klaytn/caver-js)
+* [Caver-js](https://github.com/kaiachain/caver-js)
 * [Web3 js](https://web3js.readthedocs.io/en/v1.8.1/)
 * [Tatum-js](https://github.com/tatumio/tatum-js)
 * [web3.unity](https://github.com/ChainSafe/web3.unity)
@@ -93,20 +93,20 @@ The Kaia ecosystem provides an open-source DEX infrastructure that offers variou
 Deployment is automated using Dockers and Kubernetes in the open-source DEX to easily spin up a DEX. Here are the different components of DEX: 
 
  * [Open Source Dex](https://dex.baobab.klaytn.net/)
-    * [Dex Frontend](https://github.com/klaytn/klaytn-dex-frontend)
-    * [Dex Dashboard](https://github.com/klaytn/klaytn-dex-dashboard)
-    * [Dex Contracts](https://github.com/klaytn/klaytn-dex-contracts)
-    * [Dex Subgraph](https://github.com/klaytn/klaytn-dex-subgraphs)
+    * [Dex Frontend](https://github.com/kaiachain/open-dex-frontend)
+    * [Dex Dashboard](https://github.com/kaiachain/open-dex-dashboard)
+    * [Dex Contracts](https://github.com/kaiachain/open-dex-contracts)
+    * [Dex Subgraph](https://github.com/kaiachain/open-dex-subgraphs)
 
 The DEX testnet is available for testing in the Kairos testnet without any installations. Feel free to play around [here](https://dex.baobab.klaytn.net/swap).
 
 ## Other Tools <a id="Other Tools"></a>
 
-* [Kaia Online Toolkit](https://toolkit.klaytn.foundation/): This toolkit provides code samples and pages to help you utilize the Kaia SDK(caver-js). With the Online Toolkit, you can derive the code to deploy your Kaia contracts using caver-js. This contract includes [KIP7](https://toolkit.klaytn.foundation/kct/KIP7Deploy), [KIP17](https://toolkit.klaytn.foundation/kct/KIP17Deploy), [KIP37](https://toolkit.klaytn.foundation/kct/KIP37Deploy) and other [KCT](https://toolkit.klaytn.foundation/kct/KCTDetection). The online toolkit also gives users the functionality of interacting with deployed contracts given its ABI and contract address.
+* [Kaia Online Toolkit](https://toolkit.kaia.io/): This toolkit provides code samples and pages to help you utilize the Kaia SDK(caver-js). With the Online Toolkit, you can derive the code to deploy your Kaia contracts using caver-js. This contract includes [KIP7](https://toolkit.kaia.ip/kct/KIP7Deploy), [KIP17](https://toolkit.kaia.io/kct/KIP17Deploy), [KIP37](https://toolkit.kaia.io/kct/KIP37Deploy) and other [KCT](https://toolkit.kaia.io/kct/KCTDetection). The online toolkit also gives users the functionality of interacting with deployed contracts given its ABI and contract address.
   
-* [Klay-Spray](https://github.com/klaytn/klayspray): Want to quickly deploy a layer 1 network? Klayspray helps you easily deploy a private layer1 network.
+<!-- * [Klay-Spray](https://github.com/klaytn/klayspray): Want to quickly deploy a layer 1 network? Klayspray helps you easily deploy a private layer1 network. -->
   
-* [Sidechain](https://docs.klaytn.foundation/content/installation-guide/deployment/service-chain): This enables developers who wants to build a local private network with high TPS, minimal transaction fees or data privacy.
+* [Sidechain](https://docs.kaia.io/nodes/service-chain/): This enables developers who wants to build a local private network with high TPS, minimal transaction fees or data privacy.
    
 * [Kaia Wizard](https://wizard.klaytn.foundation/): This is an interactive generator to bootstrap your smart contract and learn about [Kaia Contracts](https://github.com/klaytn/klaytn-contracts). This is based on [OpenZeppelin Wizard](https://wizard.openzeppelin.com/).
 

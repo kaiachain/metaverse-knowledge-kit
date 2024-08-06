@@ -23,7 +23,7 @@ After successfully installing caver-js and generating your Project ID and Projec
 ```javascript
 
 const Caver = require('caver-js')
-const caver = new Caver('https://api.baobab.klaytn.net:8651/')
+const caver = new Caver('https://public-en-kairos.node.kaia.io')
 
 
 const ipfsConn = {

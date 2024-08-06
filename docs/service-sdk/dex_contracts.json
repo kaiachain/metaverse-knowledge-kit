@@ -1,8 +1,8 @@
 {
     "network": {
-        "chainName": "Klaytn Kairos",
+        "chainName": "Kaia Kairos",
         "chainId": 1001,
-        "rpcUrl": "https://api.baobab.klaytn.net:8651",
+        "rpcUrl": "https://public-en-kairos.node.kaia.io",
         "blockExplorerUrl": "https://baobab.scope.klaytn.com"
     },
     "tokens": [

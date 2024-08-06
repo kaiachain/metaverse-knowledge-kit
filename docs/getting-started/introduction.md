@@ -38,7 +38,7 @@ For individuals that want to build a game in the metaverse, you can make use of 
 | Store assets                                                                                   | Decentralized storage solutions                         |
 | Gaming SDKs                                                                                    | Unity-SDK support on Kaia                             |
 
-Please refer to our [Whitepaper](https://docs.kaia.io/docs/kaiatech/) and [this article](https://medium.com/klaytn/why-klaytn-is-the-technology-layer-of-choice-for-metaverse-gaming-f18b2bc48ca4) for more details on why Kaia is the blockchain choice for metaverse applications.
+Please refer to our [Whitepaper](https://docs.kaia.io/kaiatech/) and [this article](https://medium.com/klaytn/why-klaytn-is-the-technology-layer-of-choice-for-metaverse-gaming-f18b2bc48ca4) for more details on why Kaia is the blockchain choice for metaverse applications.
 
 :::info
 If you have any questions, please join our [Discord server](https://discord.gg/kaiachain), or send us an email at developers@kaia.io

@@ -40,7 +40,7 @@ public class CustomCallExample : MonoBehaviour
         // set smart contract address
         string account = "0x94404aEc273e50f741c0e166CC55a372D5c6Df7C";
         // set rpc endpoint url
-        string rpc = "https://public-node-api.klaytnapi.com/v1/cypress";
+        string rpc = "https://public-en.node.kaia.io";
         
         // call a transaction
         string balance = await EVM.BalanceOf(chain, network, account, rpc);

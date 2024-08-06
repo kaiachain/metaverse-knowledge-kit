@@ -19,7 +19,7 @@ In this tutorial, you will use Chainlink VRF V2 contract to programmatically cre
 * [MetaMask](https://metamask.io/download/)
 * [Remix IDE](https://remix.ethereum.org/)
 * [Klaytn Plugin on Remix](https://klaytn.foundation/using-klaytn-plugin-on-remix/)
-* Test KLAY from [Faucet](https://baobab.wallet.klaytn.foundation/faucet)
+* Test KLAY from [Faucet](https://faucet.kaia.io/)
 
 ### Step 1 – Obtaining test LINK <a id="Step 1 – Obtaining test LINK"></a>
 

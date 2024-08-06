@@ -16,7 +16,7 @@ In this tutorial, you will use Supra VRF to request random numbers on the Kaia b
 * [MetaMask](https://metamask.io/download/)
 * [Remix IDE](https://remix.ethereum.org/)
 * [Kaia Plugin on Remix](https://klaytn.foundation/using-klaytn-plugin-on-remix/)
-* Test KLAY from [Faucet](https://baobab.wallet.klaytn.foundation/faucet)
+* Test KAIA from [Faucet](https://faucet.kaia.io/)
 
 ## Getting Started
 In the following steps, you will learn how to use request random numbers in your consumer contract. Lets get started!

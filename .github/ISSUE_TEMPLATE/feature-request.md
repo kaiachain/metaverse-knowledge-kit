@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Create a feature request for the Klaytn Safe
+about: Create a feature request for the Kaia Safe
 ---
 
 <!--

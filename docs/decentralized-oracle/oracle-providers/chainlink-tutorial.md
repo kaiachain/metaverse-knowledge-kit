@@ -19,7 +19,7 @@ In this tutorial, you will use Chainlink VRF V2 contract to programmatically cre
 * [MetaMask](https://metamask.io/download/)
 * [Remix IDE](https://remix.ethereum.org/)
 * [Kaia Plugin on Remix](https://klaytn.foundation/using-klaytn-plugin-on-remix/)
-* Test KLAY from [Faucet](https://baobab.wallet.klaytn.foundation/faucet)
+* Test KAIA from [Faucet](https://faucet.kaia.io/)
 
 ### Step 1 – Obtaining test LINK <a id="Step 1 – Obtaining test LINK"></a>
 
@@ -78,7 +78,7 @@ Let’s paste in the address on MetaMask.
 
 ![](/images/chainlink/linkPasteCA.png)
 
-To cover the gas fee, make sure you also have testnet KLAY from [faucet](https://baobab.wallet.klaytn.foundation/faucet). Click **Confirm**.
+To cover the gas fee, make sure you also have testnet KAIA from [faucet](https://faucet.kaia.io/). Click **Confirm**.
 
 
 We now need to top up our subscription account from the contract to pay for the transaction cost when requesting random numbers. Let’s send 5 LINK for good measure. To do this, click **toUpSubscription** and enter the amount, taking into account the 18 decimals. Then click **Transact** and confirm the transaction.

@@ -10,7 +10,7 @@ In general, the creators of a unique asset (NFT) profit from the asset's initial
 ## Definition of NFT Royalties <a id="Definition of NFT Royalties"></a>
 NFT royalties are payments made to the original creator of a digital asset for each time that asset is resold. This means that when this asset is sold, a certain percentage is paid to the creator as a reward for the asset's value.
 
-For example, a creator may have published an asset on the Marketplace and initially sold it for 10,000 KLAY. Simultaneously, the creator included a 10% NFT royalty percentage for subsequent sales. Thus, if the buyer resells and earns 100,000 KLAY from the resale, the original creator will receive 10% (10,000 KLAY).
+For example, a creator may have published an asset on the Marketplace and initially sold it for 10,000 KAIA. Simultaneously, the creator included a 10% NFT royalty percentage for subsequent sales. Thus, if the buyer resells and earns 100,000 KAIA from the resale, the original creator will receive 10% (10,000 KAIA).
 
 Isn't that cool? NFT royalties let creators passively earn from their work.
 

@@ -19,7 +19,7 @@ Witnet price feeds are timely updated with fresh data as aggregated from multipl
 * [MetaMask](https://metamask.io/download/)
 * [Remix IDE](https://remix.ethereum.org/)
 * [Kaia Plugin on Remix](https://klaytn.foundation/using-klaytn-plugin-on-remix/)
-* Test KLAY from [Faucet](https://baobab.wallet.klaytn.foundation/faucet)
+* Test KAIA from [Faucet](https://faucet.kaia.io/)
 
 ### Step 1 - Get the WitnetPriceRouter address <a id="Get the WitnetPriceRouter address "></a>
 
@@ -28,7 +28,7 @@ Go to [Multi-chain addresses](https://docs.witnet.io/smart-contracts/witnet-data
 ![](/images/witnet/price-feed.png)
 
 
-To get the price of the KLAY/USD pair on Kairos network, we will need both the Price Router address and the ID(which represents the pair).
+To get the price of the KAIA/USD pair on Kairos network, we will need both the Price Router address and the ID(which represents the pair).
 > WitnetPriceRouter Address: [0xeD074DA2A76FD2Ca90C1508930b4FB4420e413B0](https://baobab.scope.klaytn.com/account/0xeD074DA2A76FD2Ca90C1508930b4FB4420e413B0?tabId=txList)
 > ID: *0x6cc828d1*
 
@@ -60,32 +60,32 @@ contract PriceFeed {
         witnetPriceRouter = IWitnetPriceRouter(0xeD074DA2A76FD2Ca90C1508930b4FB4420e413B0);
     }
 
-    /// Returns the KLAY / USD price (6 decimals), ultimately provided by the Witnet oracle, and
+    /// Returns the KAIA / USD price (6 decimals), ultimately provided by the Witnet oracle, and
     /// the timestamps at which the price was reported back from the Witnet oracle's sidechain 
-    /// to Klaytn Kairos. 
+    /// to Kaia Kairos. 
     /// ID4: 0x6cc828d1
-    function getKlayUsdPrice() external view returns (int256 _lastPrice, uint256 _lastTimestamp) {
+    function getKaiaUsdPrice() external view returns (int256 _lastPrice, uint256 _lastTimestamp) {
         (_lastPrice, _lastTimestamp,) = witnetPriceRouter.valueFor(bytes4(0x6cc828d1));
     }
 }
 
 ```
-If you look at the parameter in the constructor and in the `getKLayUsdPrice` function, we have used the address of the WitnetPriceRouter and the ID4 mentioned above.
+If you look at the parameter in the constructor and in the `getKaiaUsdPrice` function, we have used the address of the WitnetPriceRouter and the ID4 mentioned above.
 
 ### Step 3 - Compile and Deploy the contract <a id="Step 3 - Compile and Deploy the contract"></a>
 
-Select the Kaia icon in the sidebar to use the Kaia plugin. Choose Kairos environment and add your account by providing your [MetaMask private key](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-export-an-account-s-private-key#:~:text=On%20the%20account%20page%2C%20click,click%20%E2%80%9CConfirm%E2%80%9D%20to%20proceed.). Make sure you have enough test KLAY from [Faucet](https://baobab.wallet.klaytn.foundation/faucet).
+Select the Kaia icon in the sidebar to use the Kaia plugin. Choose Kairos environment and add your account by providing your [MetaMask private key](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-export-an-account-s-private-key#:~:text=On%20the%20account%20page%2C%20click,click%20%E2%80%9CConfirm%E2%80%9D%20to%20proceed.). Make sure you have enough test KAIA from [Faucet](https://faucet.kaia.io/).
 
 ![](/images/witnet/deploy-pricefeed.png)
 
 Now you have your contract deployed. 
 
-### Step 4 - Get the KLAY/USD price <a id="Step 4 - Get the KLAY/USD price"></a>
-Once your contract is deployed, you will be able to see the PriceFeed contract under the "Deployed Contracts" section. Click on it, and the available functions will show up. Here, we have the *getKlayUsdPrice* function.
+### Step 4 - Get the KAIA/USD price <a id="Step 4 - Get the KAIA/USD price"></a>
+Once your contract is deployed, you will be able to see the PriceFeed contract under the "Deployed Contracts" section. Click on it, and the available functions will show up. Here, we have the *getKaiaUsdPrice* function.
 
 ![](/images/witnet/getKlayUsd.png)
 
-Click on it to fetch the current price of KLAY per USD. At the time of writing, it is `192307`, which means 1 KLAY equals to **$0.192307**.
+Click on it to fetch the current price of KAIA per USD. At the time of writing, it is `192307`, which means 1 KAIA equals to **$0.192307**.
 
 ## Conclusion <a id="Conclusion"></a>
 In this tutorial, we saw how to use Witnet oracle to get the Price Feed on kairos testnet. These same steps can be applied when trying to get the price Feed on Kaia Cypress(Mainnet).  If you want more information, visit [Kaia Docs](https://docs.klaytn.foundation/) and [Witnet Oracle Docs](https://docs.witnet.io/). If you have any questions, visit [Kaia Forum](https://forum.klaytn.foundation/).

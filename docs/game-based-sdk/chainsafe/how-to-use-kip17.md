@@ -107,7 +107,7 @@ contract HappyMonkey is KIP17, KIP17Enumerable {
 
 > Find the ERC721 source code [here](https://github.com/davidrazmadzeExtra/ERC721_NFT/blob/main/HappyMonkey.sol)
 
-* Compile your contract and deploy it to kairos testnet (get your faucet [here](https://baobab.wallet.klaytn.foundation/faucet)).
+* Compile your contract and deploy it to kairos testnet (get your faucet [here](https://faucet.kaia.io/)).
 
 # Create your C# script on Unity  <a id="Create your C# script on Unity"></a>
 

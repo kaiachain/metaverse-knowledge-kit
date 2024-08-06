@@ -9,7 +9,7 @@ const config = {
   title: 'Metaverse Knowledge Kit',
   tagline: 'Seamlessly build your Metaverse on Kaia',
   //@ts-ignore
-  url: "https://metaverse-knowledge-kit.klaytn.foundation/",
+  url: "https://metaverse-knowledge-kit.kaia.io/",
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -52,12 +52,12 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/klaytn/klaytn-metaverse-package-docs/edit/main',
+            'https://github.com/kaiachain/metaverse-knowledge-kit/edit/main',
         },
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/klaytn/klaytn-metaverse-package-docs/edit/main',
+            'https://github.com/kaiachain/metaverse-knowledge-kit/edit/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -72,7 +72,7 @@ const config = {
       image: 'img/kaia-logo.png',
       announcementBar: {
         id: 'docs_archive',
-        content: '<div style="font-size: 13px">📢 Metaverse Knowledge Kit is now live, but <b>some content is still being updated to reflect the transition from Klaytn and may refer to outdated information until July.</b> Thank you for your understanding. 🙏🏻</div>',
+        content: '<div style="font-size: 13px">📢 Metaverse Knowledge Kit is now live, but <b>some content is still being updated to reflect the transition from Klaytn.</b> Thank you for your understanding. 🙏🏻</div>',
         backgroundColor: '#789806',
         textColor: '#FFFFFF',
         isCloseable: true,
@@ -99,7 +99,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/klaytn/klaytn-metaverse-package-docs',
+            href: 'https://github.com/kaiachain/metaverse-knowledge-kit',
             label: 'GitHub',
             position: 'right',
           },
@@ -117,7 +117,7 @@ const config = {
             items: [
               {
                 label: 'Github',
-                href: 'https://github.com/klaytn',
+                href: 'https://github.com/kaiachain',
               },
               {
                 label: 'Kaia Docs',
@@ -125,7 +125,7 @@ const config = {
               },
               {
                 label: 'Developer Portal',
-                href: 'http://developer.klaytn.foundation/',
+                href: 'http://developer.kaia.io/',
               },
               {
                 label: 'Blog',
@@ -138,7 +138,7 @@ const config = {
             items: [
               {
                 label: 'Forum',
-                href: 'https://forum.klaytn.foundation/',
+                href: 'https://devforum.kaia.io/',
               },
               {
                 label: 'Discord',

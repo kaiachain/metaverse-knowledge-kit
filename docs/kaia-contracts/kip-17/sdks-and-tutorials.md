@@ -9,26 +9,26 @@ In this guide, you will deploy a KIP17 contracts on Remix IDE and, after deploym
 ## 1. Prerequisites <a id="KIP17 Tutorial Prerequsite"></a>
 
 * [Remix IDE](https://docs.kaia.io/docs/build/tutorials/connecting-remix/) and [Kaikas](https://kaikas.zendesk.com/hc/en-us/articles/6657796272793-How-do-I-install-PC-Kaikas-)
-* Enough test KLAY from [faucet](https://baobab.wallet.klaytn.foundation/faucet)
+* Enough test KAIA from [faucet](https://faucet.kaia.io/)
 * [Node Js and NPM](https://kinsta.com/blog/how-to-install-node-js/)
 
 ## 2. Deploying KIP 17 Smart contract <a id="Deploying KIP 17 Smart contract"></a>
-The code below defines a KIP17 token called. The contract uses the `KIP17` and `KIP17Enumerable` contracts from the [Kaia contracts library](https://github.com/klaytn/klaytn-contracts), as well as the `Counters` and `Ownable` contract for managing token ID counters and access control
+The code below defines a KIP17 token called. The contract uses the `KIP17` and `KIP17Enumerable` contracts from the [Kaia contracts library](https://github.com/kaiachain/kaia-contracts), as well as the `Counters` and `Ownable` contract for managing token ID counters and access control
 
 The contract has a constructor that initializes the KIP17 contract with the name "HappyMonkey" and the symbol "HM". It also increments the token ID counter to start at 1 (the default value is 0).
 
-The contract defines two public functions, withdraw and safeMint, as well as several internal and override functions. The withdraw function allows the contract owner to withdraw any KLAY that is in the contract. The safeMint function allows users to mint new tokens provided that the total supply is less than the maximum limit and the user sends at least the minimum required amount of KLAY.
+The contract defines two public functions, withdraw and safeMint, as well as several internal and override functions. The withdraw function allows the contract owner to withdraw any KAIA that is in the contract. The safeMint function allows users to mint new tokens provided that the total supply is less than the maximum limit and the user sends at least the minimum required amount of KAIA.
 
-The contract also overrides the _baseURI and supportsInterface functions from the KIP17 and KIP17Enumerable contracts, as well as the _beforeTokenTransfer function from the [KIP17](https://github.com/klaytn/klaytn-contracts/tree/master/contracts/KIP/token/KIP17) contract. These functions are used for various internal and utility purposes, such as setting the base URI for token metadata and checking if the contract supports a specific interface.
+The contract also overrides the _baseURI and supportsInterface functions from the KIP17 and KIP17Enumerable contracts, as well as the _beforeTokenTransfer function from the [KIP17](https://github.com/kaiachain/kaia-contracts/tree/master/contracts/KIP/token/KIP17) contract. These functions are used for various internal and utility purposes, such as setting the base URI for token metadata and checking if the contract supports a specific interface.
 
 ```javascript title="KIP17Token.sol"
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "@klaytn/contracts/KIP/token/KIP17/KIP17.sol";
-import "@klaytn/contracts/KIP/token/KIP17/extensions/KIP17Enumerable.sol";
-import "@klaytn/contracts/utils/Counters.sol";
-import "@klaytn/contracts/access/Ownable.sol";
+import "@kaiachain/contracts/KIP/token/KIP17/KIP17.sol";
+import "@kaiachain/contracts/KIP/token/KIP17/extensions/KIP17Enumerable.sol";
+import "@kaiachain/contracts/utils/Counters.sol";
+import "@kaiachain/contracts/access/Ownable.sol";
 
 contract HappyMonkey is KIP17, KIP17Enumerable, Ownable{
 
@@ -120,7 +120,7 @@ const Caver = require('caver-js')
 const contractABI = require("../abi/kip17Abi.json")
 
 // Initialize caver.js and the KIP7 contract
-const caver = new Caver('https://api.baobab.klaytn.net:8651/')
+const caver = new Caver('https://public-en-kairos.node.kaia.io')
 const contractAddr = "paste contract address"
 const contract = caver.contract.create(contractABI, contractAddr);
 

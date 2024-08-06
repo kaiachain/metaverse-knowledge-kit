@@ -9,11 +9,11 @@ The introduction of dynamic NFTs will result in excellent gameplay in the gaming
 
 One of these eight NFTs, the Gold Evolve NFT, made a unique promise: if LaMelo Ball was named Rookie of the Year for the 2021 NBA season, the NFT would evolve to reflect a new image. Following LaMelo's award, the NFT evolved.
 
-In this tutorial, you will learn how to build a dynamic NFT using Witnet Oracle to update your NFT metadata based on [KLAY/USDT](https://feeds.witnet.io/klaytn/klaytn-testnet_klay-usdt_6) price action.
+In this tutorial, you will learn how to build a dynamic NFT using Witnet Oracle to update your NFT metadata based on [KAIA/USDT](https://feeds.witnet.io/klaytn/klaytn-testnet_klay-usdt_6) price action.
 
 ## Prerequisites <a id="Prerequisite"></a>
 
-1. [Remix IDE](https://docs.kaia.io/docs/build/tutorials/connecting-remix/#connecting-kaia---remix-using-metamask-) & [Metamask](https://docs.kaia.io/docs/build/tutorials/connecting-metamask/) 
+1. [Remix IDE](https://docs.kaia.io/build/tutorials/connecting-remix/#connecting-kaia---remix-using-metamask-) & [Metamask](https://docs.kaia.io/build/tutorials/connecting-metamask/) 
    
 In this tutorial, we're going to use the Remix IDE, but the same can be done using Hardhat or any other Solidity Smart Contract development framework and your favorite code editor.
 
@@ -23,7 +23,7 @@ IPFS desktop and IPFS Companion harnesses the power of [IPFS](https://ipfs.io/) 
 
 3. Faucets and Testnet Tokens
    
-Make sure your MetaMask wallet is connected to [Kairos](https://docs.kaia.io/docs/build/tutorials/connecting-metamask/#connect-to-kaia-baobab-network-testnet-). After connecting to the right network, get test KLAY from Klay [Faucet](https://baobab.wallet.klaytn.foundation/faucet)
+Make sure your MetaMask wallet is connected to [Kairos](https://docs.kaia.io/build/tutorials/connecting-metamask/#connect-to-kaia-baobab-network-testnet-). After connecting to the right network, get test KAIA from [Faucet](https://faucet.kaia.io/)
 
 ## Set up <a id="set-up"></a>
 Create a `KdNFT.sol` file on Remix. Copy over the smart contract code below in the newly created file and save it.
@@ -33,12 +33,12 @@ Create a `KdNFT.sol` file on Remix. Copy over the smart contract code below in t
 
 pragma solidity ^0.8.0;
 
-import "@klaytn/contracts/KIP/token/KIP17/KIP17.sol";
-import "@klaytn/contracts/KIP/token/KIP17/extensions/KIP17Enumerable.sol";
-import "@klaytn/contracts/KIP/token/KIP17/extensions/KIP17URIStorage.sol";
-import "@klaytn/contracts/utils/Counters.sol";
-import "@klaytn/contracts/utils/Strings.sol";
-import "@klaytn/contracts/access/Ownable.sol";
+import "@kaiachain/contracts/KIP/token/KIP17/KIP17.sol";
+import "@kaiachain/contracts/KIP/token/KIP17/extensions/KIP17Enumerable.sol";
+import "@kaiachain/contracts/KIP/token/KIP17/extensions/KIP17URIStorage.sol";
+import "@kaiachain/contracts/utils/Counters.sol";
+import "@kaiachain/contracts/utils/Strings.sol";
+import "@kaiachain/contracts/access/Ownable.sol";
 
 
 
@@ -78,7 +78,7 @@ contract KdynamicNFT is KIP17, KIP17Enumerable, KIP17URIStorage, Ownable {
         witnetPriceRouter = IWitnetPriceRouter(0xeD074DA2A76FD2Ca90C1508930b4FB4420e413B0);
         updateKlayUsdtPriceFeed();
         
-        // gets the current KLAY/USDT price and store it to currentPrice var 
+        // gets the current KAIA/USDT price and store it to currentPrice var 
         (currentPrice ,) = getKlayUsdtPrice();
     }
 
@@ -154,7 +154,7 @@ contract KdynamicNFT is KIP17, KIP17Enumerable, KIP17URIStorage, Ownable {
         }
     }
 
-    /// Returns the KlAY / USDT price (6 decimals), ultimately provided by the Witnet oracle, and
+    /// Returns the KAIA / USDT price (6 decimals), ultimately provided by the Witnet oracle, and
     /// the timestamps at which the price was reported back from the Witnet oracle's sidechain 
     /// to Kaia Kairos. 
      function getKlayUsdtPrice() public view returns (int256 _lastPrice, uint256 _lastTimestamp) {
@@ -202,7 +202,7 @@ contract KdynamicNFT is KIP17, KIP17Enumerable, KIP17URIStorage, Ownable {
 ```
 
 
-The code above houses the logic for our dynamic NFT. It employs a mix of [Kaia contracts](https://github.com/klaytn/klaytn-contracts), [Witnet Oracle contract](https://www.npmjs.com/package/witnet-solidity-bridge) interfaces, and a manual implementation of the Chainlink Keeper Contract. 
+The code above houses the logic for our dynamic NFT. It employs a mix of [Kaia contracts](https://github.com/kaiachain/kaia-contracts), [Witnet Oracle contract](https://www.npmjs.com/package/witnet-solidity-bridge) interfaces, and a manual implementation of the Chainlink Keeper Contract. 
 
 The performUpkeep function is where the majority of the code's functionality is found. At intervals, if the market price goes up, the smart contract will ensure the NFT’s URI points to the bullish image, and the NFT will be dynamically updated. The NFT will dynamically update to a bearish image if the price feed data falls. 
 
