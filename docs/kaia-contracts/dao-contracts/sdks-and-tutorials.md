@@ -5,7 +5,7 @@ sidebar_label: Tutorial
 
 # 💻 Simple On-chain Governance Tutorial
 
-In this tutorial you will use [Kaia Contract](https://github.com/klaytn/klaytn-contracts), [Kaia Contract Wizard](https://wizard.klaytn.foundation/)  and [Caver-Js](https://docs.klaytn.foundation/content/dapp/sdk/caver-js/getting-started) to run a simple on-chain governance. You will learn about how to:
+In this tutorial you will use [Kaia Contract](https://github.com/kaiachain/kaia-contracts), [Kaia Contract Wizard](https://wizard.kaia.io/)  and [Caver-Js](https://docs.kaia.io/references/sdk/caver-js/) to run a simple on-chain governance. You will learn about how to:
 * Create a KIP7 governance token contract that you ll use to cast votes on the governance proposals.
 * Create a standard governor contract.
 * Create a mintable KIP7 contract that will mint new tokens on the successful execution of the on-chain governance proposal.
@@ -15,7 +15,7 @@ In this tutorial you will use [Kaia Contract](https://github.com/klaytn/klaytn-c
 * [Metamask](https://metamask.io/download/): Used to deploy the contracts interact with the contracts.
 * [Remix IDE](https://remix.ethereum.org/): Used to compile the contracts and deploy through MetaMask.
 * [Kaia Plugin on Remix](https://klaytn.foundation/using-klaytn-plugin-on-remix/): develop, deploy, and interact with smart contracts on the Kaia blockchain and execute various Kaia-specific transactions
-* Test KLAY from [Faucet](https://baobab.wallet.klaytn.foundation/faucet): Fund your account with sufficient KLAY
+* Test KAIA from [Faucet](https://faucet.kaia.io/): Fund your account with sufficient KAIA
 * [Node Js and NPM](https://kinsta.com/blog/how-to-install-node-js/)
 
 ## 2. Create and deploy your KIP7 governance token <a id="Create and deploy your KIP7 governance token"></a>
@@ -24,7 +24,7 @@ In this section, you'll create your simple governance token—the token you will
 
 **Kaia Contract Wizard**
 
-* Open [Kaia Contract Wizard](https://wizard.klaytn.foundation/)
+* Open [Kaia Contract Wizard](https://wizard.kaia.io/)
 * Select **KIP7**.
 * Provide a `name` and a `symbol` for the token. For example: *GovernanceToken*, *GTK*.
 * In **Premint**, provide the number of tokens to issue to your account. For example: *100*.
@@ -50,7 +50,7 @@ In this section, you'll create a mintable token that will be used by the governa
 
 **Kaia Contract Wizard**
 
-* Open [Kaia Contract Wizard](https://wizard.klaytn.foundation/)
+* Open [Kaia Contract Wizard](https://wizard.kaia.io/)
 * Select **KIP7**.
 * Provide a `name` and a `symbol` for the token. For example: *GovMintableToken*, *GMTK*.
 * In **Premint**, keep **0**.
@@ -77,7 +77,7 @@ This will be your on-chain governance contract.
 
 **Kaia Contract Wizard**
 
-* Open [Kaia Contract Wizard](https://wizard.klaytn.foundation/)
+* Open [Kaia Contract Wizard](https://wizard.kaia.io/)
 * Select **Governor**.
 * Provide a `name` and a `symbol` for the token. For example: *GovernanceContract*.
 * In **Voting Delay**, keep 1 block. In the **Voting Period**, put 300 blocks. In **1 block** =, put 1 second. This will be about 5 minutes for a voting period.
@@ -136,7 +136,7 @@ const governanceMintableTokenABI = require("../abi/governance/govtMintableTokenC
 const governanceContractABI = require("../abi/governance/governanceContract.json")
 
 // Initialize caver.js and the each governance contract
-const caver = new Caver('https://api.baobab.klaytn.net:8651/')
+const caver = new Caver('https://public-en-kairos.node.kaia.io')
 const governanceTokenAddr = "<PASTE GOVERNANCE TOKEN CONTRACT ADDRESS>";
 const governanceMintableTokenAddr = "<<PASTE GOVERNANCE MINTABLE TOKEN CONTRACT ADDRESS>>";
 const governanceContractAddr = "<PASTE GOVERNANCE CONTRACT ADDRESS>";

@@ -162,7 +162,7 @@ Go to **File** → **Build and Run**.
 Click on **Login** to connect **Metamask**.
 Click on the **mint** button.
 Confirm your transaction.
-Here are the details of the transaction on [Klaytnscope](https://baobab.scope.klaytn.com/tx/0x9965be98dc1f2591da3514138840bf034a415822fc71fb2f6b91c1d21ea2f63f?tabId=eventLog).
+Here are the details of the transaction on [Kaiascope](https://baobab.scope.klaytn.com/tx/0x9965be98dc1f2591da3514138840bf034a415822fc71fb2f6b91c1d21ea2f63f?tabId=eventLog).
 
 
 

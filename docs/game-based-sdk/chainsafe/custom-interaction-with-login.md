@@ -60,7 +60,7 @@ contract Storage {
 
 ```
 
-* Compile your contract and deploy it to kairos testnet (get your faucet [here](https://baobab.wallet.klaytn.foundation/faucet)).
+* Compile your contract and deploy it to kairos testnet (get your faucet [here](https://faucet.kaia.io/)).
 
 
 ## Create your C# script on Unity <a id="Create your C# script on Unity"></a>
@@ -93,7 +93,7 @@ public class CustomCallABIExample : MonoBehaviour
     // set contract ABI
     private readonly string abi = "[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"num\",\"type\":\"uint256\"}],\"name\":\"store\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\",\"signature\":\"0x6057361d\"},{\"inputs\":[],\"name\":\"retrieve\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\",\"constant\":true,\"signature\":\"0x2e64cec1\"}]";
     // set RPC endpoint url
-    string rpc = "https://public-node-api.klaytnapi.com/v1/baobab";
+    string rpc = "https://public-en-kairos.node.kaia.io";
 
     // Call the "store" function with "10" as argument
     async public void AddValue()

@@ -24,7 +24,7 @@ It also has a command line interface to initialize a sample project and interact
 ## Installation
 
 ```typescript
-npm install -g @klaytn/kss-cli --force
+npm install -g @kaiachain/kss-cli --force
 ```
 
 The above command installs the cli package for Kaia service sdk globally, so that we can use oracle-starter-kit
@@ -47,9 +47,9 @@ Next, follow the below steps to compile and deploy contracts to the Kaia network
 
 ### 1. Connect to Kaia Test Network (Kairos)
 
-The default hardhat configurations can be modified in `helper-hardhat-config.json`. By default it connects to Kaia test network (Boabab)
+The default hardhat configurations can be modified in `helper-hardhat-config.json`. By default it connects to Kaia test network (Kairos).
 
-Hardhat configuration variables can be found in [`helper-hardhat-config.json`](https://github.com/klaytn/klaytn-service-sdk/blob/main/packages/oracles-starter-kit/helper-hardhat-config.js) in the root directory. Below is the configuration explaination for `1001` network.
+Hardhat configuration variables can be found in [`helper-hardhat-config.json`](https://github.com/kaiachain/open-service-sdk/blob/main/packages/oracles-starter-kit/helper-hardhat-config.js) in the root directory. Below is the configuration explaination for `1001` network.
 
 - `name` - hardhat network name Ex: `kairos`
 - `witnetPriceRouter` - witnetPriceRouter Address Ex: `0xeD074DA2A76FD2Ca90C1508930b4FB4420e413B0` for Kaia Testnet. See [WitnetPriceRouter](https://docs.witnet.io/smart-contracts/witnet-data-feeds/addresses/klaytn-price-feeds#klaytn-baobab) for reference.
@@ -62,7 +62,7 @@ We will need to set environment variables by following below steps
 1. copy `.env.example` file and rename to `.env`
 2. Modify environment variables. Below is the explaination of each variable
 
-- `KAIROS_RPC_URL` - `string` https://api.baobab.klaytn.net:8651/ can be used. its the rpc url of blockchain.
+- `KAIROS_RPC_URL` - `string` https://public-en-kairos.node.kaia.io can be used. its the rpc url of blockchain.
 - `PRIVATE_KEY` - `string` This is private key from wallet, ie [MetaMask](https://metamask.io/). This is required for deploying contracts to public networks.
 
 :::caution
@@ -73,9 +73,9 @@ MAKE SURE YOU DON'T EXPOSE THE KEYS YOU PUT IN THIS `.env` FILE
 
 Don't commit and push any changes to .env files that may contain sensitive information, such as a private key! If this information reaches a public GitHub repository, someone can use it to check if you have any Mainnet funds in that wallet address, and steal them!
 
-Get some Kairos Testnet KLAY
+Get some Kairos Testnet KAIA
 
-> Go to the [Kaia faucets](https://baobab.wallet.klaytn.foundation/faucet) to get some KLAY to configured account.
+> Go to the [Kaia faucet](https://faucet.kaia.io/) to get some KAIA to configured account.
 
 ## Deploy contracts
 
@@ -118,12 +118,12 @@ The Witnet Price Feeds consumer contract has one task, to read the latest price 
 
 #### Returns
 
-- `price` - price of KLAY/USD.
+- `price` - price of KAIA/USD.
 
 #### Example
 
 ```typescript
-  // As at the time of writing this document, 1 KLAY = 0.23 USD
+  // As at the time of writing this document, 1 KAIA = 0.23 USD
   npx hardhat read-witnet-price-feed --contract 0x573AAAdF4Cf117586e74AE3845473fc65cd59C4c --id 0x6cc828d1 --network baobab
 
   /*
@@ -154,7 +154,7 @@ Once the the request to new randomness is performed successfully. The other task
 #### Parameters
 
 `deployedContractAddress` - `string` Deployed Deployed Witnet RandomNumber contract address
-`value` - `number` Value for transaction cost when requesting random numbers. Ex: 500000000000000000 i.e, 0.5 KLAY
+`value` - `number` Value for transaction cost when requesting random numbers. Ex: 500000000000000000 i.e, 0.5 KAIA
 
 ##### Returns
 
@@ -251,7 +251,7 @@ fetches the generated random number
 
 We have 2 examples for Witnet HTTP Request:
 
-- KlayPrice: a GET request example to get Klay token price in USD
+- KlayPrice: a GET request example to get KAIA token price in USD
 - postRequestExample: a POST request example echoes back any data and headers that you send in your POST requests (based on this [tutorial](https://docs.witnet.io/smart-contracts/witnet-web-oracle/make-a-post-request))
 
 Inside `witnet-queries` folder you will find predefined Witnet oracle queries.

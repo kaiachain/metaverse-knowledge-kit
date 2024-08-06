@@ -12,22 +12,22 @@ Caver-js requires contract ABI and contract address to interact with smart contr
 ## 1. Prerequisites <a id="KIP7 Tutorial Prerequsite"></a>
 
 * [Remix IDE](https://docs.kaia.io/docs/build/tutorials/connecting-remix/#connecting-kaia---remix-using-kaikas-) and [Kaikas](https://kaikas.zendesk.com/hc/en-us/articles/6657796272793-How-do-I-install-PC-Kaikas-)
-* Enough test KLAY from the [faucet](https://baobab.wallet.klaytn.foundation/faucet)
+* Enough test KAIA from the [faucet](https://faucet.kaia.io/)
 * [Node Js and NPM](https://kinsta.com/blog/how-to-install-node-js/)
 
 In this tutorial, you will learn how to deploy a KIP7 smart contract and interact with the deployed contract. Smart contracts must already be deployed on the blockchain i.e you must have the smart contract address and ABI. In a little while, we would go through deploying the contract using Remix IDE.
 
 ## 2. Deploying KIP 7 Smart contract <a id="Deploying KIP 7 Smart contract"></a>
 
-The contract below defines a basic KIP7 token with the name "MyToken", the symbol "MTK", and 18 decimal places. The contract uses the KIP7 contract from the [Kaia contracts library](https://github.com/klaytn/klaytn-contracts). The initial supply of the token is set in the contract's constructor, where we are minting 1 million tokens and sending them to the contract's creator. The mintToken function allows you to mint a certain amount of token to an address.
+The contract below defines a basic KIP7 token with the name "MyToken", the symbol "MTK", and 18 decimal places. The contract uses the KIP7 contract from the [Kaia contracts library](https://github.com/kaiachain/kaia-contracts). The initial supply of the token is set in the contract's constructor, where we are minting 1 million tokens and sending them to the contract's creator. The mintToken function allows you to mint a certain amount of token to an address.
 
 ```javascript title="KIP7Token.sol"
 
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.7.0 <0.9.0;
 
-import "@klaytn/contracts/KIP/token/KIP7/KIP7.sol";
-import "@klaytn/contracts/access/Ownable.sol";
+import "@kaiachain/contracts/KIP/token/KIP7/KIP7.sol";
+import "@kaiachain/contracts/access/Ownable.sol";
 
 contract KIP7Token is KIP7, Ownable {
     constructor() KIP7("MyToken", "MTK") {
@@ -91,7 +91,7 @@ const Caver = require('caver-js')
 const contractABI = require("../abi/kip7Abi.json")
 
 // Initialize caver.js and the KIP7 contract
-const caver = new Caver('https://api.baobab.klaytn.net:8651/')
+const caver = new Caver('https://public-en-kairos.node.kaia.io')
 const contractAddr = “paste contract address here”
 const contract = caver.contract.create(contractABI, contractAddr);
 

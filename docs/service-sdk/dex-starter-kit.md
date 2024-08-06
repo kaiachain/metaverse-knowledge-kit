@@ -7,7 +7,7 @@ sidebar_label: DEX Starter Kit
 
 A decentralized exchange (DEX) is a peer-to-peer marketplace where transactions occur directly between crypto traders. Kaia has an opensource code for the DEX infrastructure containing features like fungible token swapping, staking and liquidity provision, token-based governance, and token minting.
 
-This SDK includes the integration of [@klaytn/dex-contracts](https://github.com/klaytn/klaytn-dex-contracts/blob/dev/docs/dex-specification.md) in the starter kit to execute all the admin functionalities and basic user operations via the SDK.
+This SDK includes the integration of [@kaiachain/dex-contracts](https://github.com/kaiachain/open-dex-contracts/blob/dev/docs/dex-specification.md) in the starter kit to execute all the admin functionalities and basic user operations via the SDK.
 
 Below are the features available for DEX admin and user as part of this SDK.
 
@@ -26,18 +26,18 @@ Below are the features available for DEX admin and user as part of this SDK.
 
 To install the `kss-dexs` package, run the following command in your terminal.
 
-`npm install @klaytn/kss-dexs --save`
+`npm install @kaiachain/kss-dexs --save`
 
 Follow the below steps to try out the above features using the sdk.
 
 ## Prerequisites
 
-In order to execute the functions, the dex-contracts needs to be deployed either in Cypress or Baobab network. You can either deploy the contracts [here](https://github.com/klaytn/klaytn-dex-contracts) or use the deployed contracts in [Baobab](https://github.com/klaytn/klaytn-dex-contracts/tree/dev/deployments).
+In order to execute the functions, the dex-contracts needs to be deployed either in Cypress or Baobab network. You can either deploy the contracts [here](https://github.com/kaiachain/open-dex-contracts) or use the deployed contracts in [Kairos Testnet](https://github.com/kaiachain/open-dex-contracts/tree/dev/deployments).
 
 Also, make sure to fulfill the following prerequisites
 
-1. You must have enough supply of KLAY & other utility tokens to execute all the functions
-2. Deployment of the following DEX contracts on Kaia Mainnet OR Testnet is required. ([Ref](https://github.com/klaytn/klaytn-dex-contracts/blob/dev/README.md))
+1. You must have enough supply of KAIA & other utility tokens to execute all the functions
+2. Deployment of the following DEX contracts on Kaia Mainnet OR Testnet is required. ([Ref](https://github.com/kaiachain/open-dex-contracts/blob/dev/README.md))
    - DexFactory
    - DexRouter
    - DexToken
@@ -45,7 +45,7 @@ Also, make sure to fulfill the following prerequisites
    - Farming
    - StakingFactory
    - WKLAY
-   - Some [KIP7](https://kips.klaytn.foundation/KIPs/kip-7) and [ERC20](https://eips.ethereum.org/EIPS/eip-20) utility tokens.
+   - Some [KIP7](https://kips.kaia.io/KIPs/kip-7) and [ERC20](https://eips.ethereum.org/EIPS/eip-20) utility tokens.
 
 Here is a [list](./dex_contracts.json) of addresses which is already deployed in Kairos with MultiSig contract as owner. Its recommended to deploy your own contracts in Kairos for testing to execute all the functions as the privateKey used to deploy these contracts will be the admin.
 
@@ -67,12 +67,12 @@ Config module can be used to initalize contracts and get contract instances to i
 In the below example, we are going to initDex and get the router and factory contract instances. Similary you can use other functions defined in the module
 
 ```js
-import { Config } from '@klaytn/kss-dexs';
+import { Config } from '@kaiachain/kss-dexs';
 
 let routerAddress = '0x5867c40175a45b080abad03f19131cfa9569287b';
 let factoryAddress = '0x6b9b434e6e6a381304b0eace93894f1b649637bf';
 let privKey = 'your private key';
-let rpcURL = 'https://public-node-api.klaytnapi.com/v1/baobab';
+let rpcURL = 'https://public-en-kairos.node.kaia.io';
 
 let tokenA = '0xbb3273dc4cac595afb93559c3aa07e9e6a554fc0';
 let tokenB = '0xae33ac5c631b80757a0cf1395d1ce18f3eaa46c9';
@@ -109,11 +109,11 @@ Farming module can be used to manage the farming operations with LP tokens.You c
 In the below example, we are going to deposit tokens to a pool based on the PoolId. Similary you can use other functions defined in the module
 
 ```js
-import { Farming } from '@klaytn/kss-dexs';
+import { Farming } from '@kaiachain/kss-dexs';
 
 let farmingAddress = '0xf68b8d3fae7feb747cb4dce0a4c91a100b140245';
 let privKey = 'your private key';
-let rpcURL = 'https://public-node-api.klaytnapi.com/v1/baobab';
+let rpcURL = 'https://public-en-kairos.node.kaia.io';
 
 async function main() {
   // Create a new instance of Farming
@@ -139,11 +139,11 @@ Staking module can be used for long-term staking which allows users to stake the
 In the below example, we are going to stake a KIP7 token using Staking module. Similary you can use other functions defined in the module
 
 ```js
-import { Staking } from '@klaytn/kss-dexs';
+import { Staking } from '@kaiachain/kss-dexs';
 
 let routerAddress = '0x5867c40175a45b080abad03f19131cfa9569287b';
 let privKey = 'your private key';
-let rpcURL = 'https://public-node-api.klaytnapi.com/v1/baobab';
+let rpcURL = 'https://public-en-kairos.node.kaia.io';
 
 async function main() {
   // Create a new instance of Staking
@@ -162,23 +162,23 @@ main();
 Swap module can be used to trade one ERC-20 or KIP7 token for another. Each pair of tokens on Dex is underpinned by a liquidity pool. There are multiple functions for swapping tokens for different kinds of swap operations. You can swap tokens using the below functions in the Swap module
 
 - exactTokensForTokens - function to swap exact amount of Tokens for a given amount of Tokens.
-- tokensForExactTokens - function to swap given amount of Tokens for exact amount of KLAYs.
-- exactKlayForTokens - function to swap exact amount of KLAY for a given amount of Tokens.
-- tokensForExactKlay - function to swap given amount of Tokens for exact amount of KLAYs.
-- exactTokensForKlay - function to swap exact amount of Tokens for a given amount of KLAY.
-- klayForExactTokens - function to swap KLAYs for a given exact amount of Tokens.
+- tokensForExactTokens - function to swap given amount of Tokens for exact amount of KAIA.
+- exactKlayForTokens - function to swap exact amount of KAIA for a given amount of Tokens.
+- tokensForExactKlay - function to swap given amount of Tokens for exact amount of KAIAs.
+- exactTokensForKlay - function to swap exact amount of Tokens for a given amount of KAIA.
+- klayForExactTokens - function to swap KAIAs for a given exact amount of Tokens.
 
 #### Example
 
 In the below example, we are going to Swap exactKlayForTokens using Swap module. Similary you can use other functions defined in the module
 
 ```js
-import { Swap } from '@klaytn/kss-dexs';
+import { Swap } from '@kaiachain/kss-dexs';
 
 let routerAddress = '0x5867c40175a45b080abad03f19131cfa9569287b';
 let factoryAddress = '0x6b9b434e6e6a381304b0eace93894f1b649637bf';
 let privKey = 'your private key';
-let rpcURL = 'https://public-node-api.klaytnapi.com/v1/baobab';
+let rpcURL = 'https://public-en-kairos.node.kaia.io';
 
 async function main() {
   const path = [
@@ -214,21 +214,21 @@ main();
 Liquidity module can be used to add liquidity into a pool and remove liquidity from a pool. Each pair of tokens on Dex is underpinned by a liquidity pool. You can use the Liquidity module to execute the below functions
 
 - add - add liquidity to a given pair of tokens (token0 & token1).
-- addWithKlay - add liquidity with Klay to a given pair of tokens (token & Klay).
+- addWithKlay - add liquidity with Kaia to a given pair of tokens (token & Kaia).
 - remove - remove liquidity from a given pair of tokens (token0 & token1).
-- removeWithKlay - remove liquidity from a given pair of tokens (token & klay).
+- removeWithKlay - remove liquidity from a given pair of tokens (token & kaia).
 
 #### Example
 
-In the below example, we are going to add liquidity with Klay using Liquidity module. Similary you can use other functions defined in the module
+In the below example, we are going to add liquidity with Kaia using Liquidity module. Similary you can use other functions defined in the module
 
 ```js
-import { Liquidity } from '@klaytn/kss-dexs';
+import { Liquidity } from '@kaiachain/kss-dexs';
 
 let routerAddress = '0x5867c40175a45b080abad03f19131cfa9569287b';
 let factoryAddress = '0x6b9b434e6e6a381304b0eace93894f1b649637bf';
 let privKey = 'your private key';
-let rpcURL = 'https://public-node-api.klaytnapi.com/v1/baobab';
+let rpcURL = 'https://public-en-kairos.node.kaia.io';
 
 async function main() {
   const token = '0x1234567890123456789012345678901234567890';
@@ -276,7 +276,7 @@ You can follow the below steps to execute or call any method using multisig cont
 
 In the below example, lets create a new LP farming pool using multisig contract. In order to do that,
 
-1. First, you need to get the encoded raw transaction data of the add method in Farming contract along with the parameters. [Ref](https://github.com/klaytn/klaytn-service-sdk/blob/main/packages/dexs-starter-kit/core/Farming.ts#L88)
+1. First, you need to get the encoded raw transaction data of the add method in Farming contract along with the parameters. [Ref](https://github.com/kaiachain/kaia-service-sdk/blob/main/packages/dexs-starter-kit/core/Farming.ts#L88)
 2. Call submitTransaction method from multisig contract to add pool.
 3. Get confirmation from other owners to execute the transaction.
 4. Call confirmAndExecuteTransaction from multisig contract with TxnId.
@@ -285,7 +285,7 @@ In the below example, lets create a new LP farming pool using multisig contract.
 let farmingAddress = '0xf68b8d3fae7feb747cb4dce0a4c91a100b140245';
 let multisigAddress = '0x3ffc81a526f44f79ed1b5634c3e3e694494dbd68';
 let privKey = 'your private key';
-let rpcURL = 'https://public-node-api.klaytnapi.com/v1/baobab';
+let rpcURL = 'https://public-en-kairos.node.kaia.io';
 
 async function main() {
   let allocPoint = 1000; //Number of allocation points for the new pool.

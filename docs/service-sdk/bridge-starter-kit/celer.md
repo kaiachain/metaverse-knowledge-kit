@@ -22,7 +22,7 @@ Follow the below steps to try out the above features using the sdk.
 
 ## Installation
 ```sh
-npm install @klaytn/kss-bridges-celer --save
+npm install @kaiachain/kss-bridges-celer --save
 ```
 
 ## Quick Start
@@ -31,13 +31,13 @@ There are two modules in the celer bridge starter kit.
   2. CoreBridgeSDK exposes methods of `celer` core functions to write custom snippets.
 
 ```typescript
-import BridgeSDK from '@klaytn/kss-bridges-celer';
-import CoreBridgeSDK from '@klaytn/kss-bridges-celer/core';
+import BridgeSDK from '@kaiachain/kss-bridges-celer';
+import CoreBridgeSDK from '@kaiachain/kss-bridges-celer/core';
 
 or
 
-const BridgeSDK = require('@klaytn/kss-bridges-celer');
-const CoreBridgeSDK = require('@klaytn/kss-bridges-celer/core');
+const BridgeSDK = require('@kaiachain/kss-bridges-celer');
+const CoreBridgeSDK = require('@kaiachain/kss-bridges-celer/core');
 ```
 
 > **_NOTE:_** Please make sure the wallet provided has enough balance in source/destination to perform the transactions.

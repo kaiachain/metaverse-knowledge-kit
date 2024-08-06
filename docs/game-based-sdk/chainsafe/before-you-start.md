@@ -18,7 +18,7 @@ Click [here](https://docs.kaia.io/docs/build/tutorials/connecting-metamask/#step
 
 ## Kaia RPC URL and Chain ID <a id="Kaia RPC URL and Chain ID"></a>
 
-*Kaia mainnet: RPC URL* = https://public-node-api.klaytnapi.com/v1/cypress Chain ID = 8217
+*Kaia mainnet: RPC URL* = https://public-en.node.kaia.io Chain ID = 8217
 
 *Kaia testnet: RPC URL* = https://api.baobab.klaytn.net:8651/ Chain ID = 1001
 
