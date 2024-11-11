@@ -15,7 +15,7 @@ In this tutorial, you will use Supra VRF to request random numbers on the Kaia b
 
 * [MetaMask](https://metamask.io/download/)
 * [Remix IDE](https://remix.ethereum.org/)
-* [Kaia Plugin on Remix](https://klaytn.foundation/using-klaytn-plugin-on-remix/)
+* [Kaia Plugin on Remix](https://ide.kaia.io/)
 * Test KAIA from [Faucet](https://faucet.kaia.io/)
 
 ## Getting Started
@@ -151,7 +151,7 @@ To get our random number, we have to first request for random number by calling 
 ![](/images/supraOracles/viewRngUser.png)
 
 ## Conclusion
-You have successfully requested for a random number using SupraOracles VRF on Kaia Kairos TestNet. For additional tutorials and guides based on example use-cases, please refer to the [SupraOracles Docs](https://supraoracles.com/docs/additional-guides).  If you want more information, visit [Kaia Docs](https://docs.kaia.io/) and [SupraOracles Docs](https://supraoracles.com/docs/overview). If you have any questions, visit [Kaia Forum](https://forum.klaytn.foundation/).
+You have successfully requested for a random number using SupraOracles VRF on Kaia Kairos TestNet. For additional tutorials and guides based on example use-cases, please refer to the [SupraOracles Docs](https://supraoracles.com/docs/additional-guides).  If you want more information, visit [Kaia Docs](https://docs.kaia.io/) and [SupraOracles Docs](https://supraoracles.com/docs/overview). If you have any questions, visit [Kaia Forum](https://devforum.kaia.io/).
 
 
 :::info

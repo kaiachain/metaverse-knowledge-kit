@@ -18,75 +18,7 @@ Below is a list of Public RPC Node providers in our ecosystem.
 
 Public EN allows you to solely focus on building and testing your blockchain product without the distraction of maintaining infrastructure to connect and interact with the Kaia network.
 
-### HTTPS  
-
-
-<Tabs>
-<TabItem value="atn" label="AllThatNode">
-
-```js
-Mainnet
-
-https://klaytn-mainnet.g.allthatnode.com/full/evm
-
-Testnet
-
-https://klaytn-baobab.g.allthatnode.com/full/evm
-```
-
-</TabItem>
-<TabItem value="kf" label="Kaia Foundation">
-
-```js
-Mainnet 
-
-https://public-en.node.kaia.io
-
-Testnet
-
-https://public-en-kairos.node.kaia.io
-```
-
-</TabItem>
-</Tabs>
-
-### Websocket
-
-
-<Tabs>
-<TabItem value="kf" label="Kaia Foundation">
-
-```js
-Mainnet 
-
-wss://public-en.node.kaia.io/ws
-
-Testnet
-
-wss://public-en-kairos.node.kaia.io/ws
-```
-
-</TabItem>
-</Tabs>
-
-
-## Community Partners <a id="Community Partners"> </a>
-
-
-| S/N      | Provider | Network     |  Endpoint     |      Request Limit     | Mode          |   
-|      ---: |    ----:|         ---:|          ---: |                   ---: |         ---:  |
-| 1        |  [ANKR](https://www.ankr.com/docs/build-blockchain/overview)        |   Mainnet          |  ```https://rpc.ankr.com/klaytn  ```           |   500 requests per second on the free plan, and 1,500 on the premium. It is upgradable on request.                     |      Free and [Subscription Plan](https://www.ankr.com/rpc/pricing/)          |
-|          |          |    Testnet         |     ``` https://rpc.ankr.com/klaytn_testnet```          |                        |               |               |
-|    2      |     [POKT](https://docs.pokt.network/)      |    Mainnet                |   ```https://klaytn-rpc.gateway.pokt.network/ ```           |   250,000 Requests Per Day Free Tier (up to two applications, with unlimited endpoints)               |            Free and Pay-As-You-Go Plan           |               
-|     3      |   [BlockPi](https://docs.blockpi.io/)        |      Mainnet          |   ```https://klaytn.blockpi.network/v1/rpc/public ```       |    20 requests per second on free services, and unlimited for paid packages.           |    Free and Paid Plan           |
-|       |           |  Testnet         |   ```https://klaytn-baobab.blockpi.network/v1/rpc/public```        |               |           |
-|    4       |      [Klaytn API Service(KAS)](https://www.klaytnapi.com/en/resource/docs/readme)             |   Mainnet            |               |  10,000 requests per day (100 requests per second) for the free plan             |     Free and [Paid Plan](https://www.klaytnapi.com/en/landing/pricings)          |
-|           |       |  Testnet         |           |               |           |
-|    5       |     [Tatum](https://apidoc.tatum.io/tag/Klaytn?_gl=1*1dhfv8u*_ga*MzY5NDMyNzg5LjE2NDQ1NTk1MzA.*_ga_BH6F6RKJW6*MTY2MjAxNDQ0OS4xNy4xLjE2NjIwMTQ2MTQuMjQuMC4w)      |     Mainnet          |               |  5 requests per second for the free plan, and 200 requests per second for the paid plans (Start, Basic)             |  Free and [Subscription Plan](https://tatum.io/pricing)            |
-|           |               |    Testnet           |           |               |               |
-|     6      |   [AllThatNode](https://docs.allthatnode.com/protocols/klaytn/klaytn-samples)            |    Mainnet           |               |       20,000 request per day    |    Free and [Paid Plan](https://www.allthatnode.com/pricing.dsrv)       |
-|           |               |     Testnet          |               |           |           |
-
+Kindly refer to this [page](https://docs.kaia.io/references/public-en/) for a list of available public EN
 
 ## Archive Nodes
 In general, a diverse set of nodes ensure that the blockchain network (e.g Kaia) is secure. These nodes, store and analyze blockchain information, validate the blockchain's state. Each node on the same network can interact with another node to accomplish a variety of tasks.
@@ -147,13 +79,13 @@ If you are an enterprise application and expect huge traffic and worried about s
 
 ### Setting up your own node
 
-Anyone who wants to send transactions or query the state of Kaia network using [Kaia APIs](https://github.com/klaytn/klaytn-docs/blob/master/docs/installation-guide/dapp/json-rpc/README.md) needs to do so via an Endpoint Node. Endpoint Nodes are the interface to the Kaia Network.
+Anyone who wants to send transactions or query the state of Kaia network using [Kaia APIs](https://docs.kaia.io/nodes/endpoint-node/) needs to do so via an Endpoint Node. Endpoint Nodes are the interface to the Kaia Network.
 
 The Endpoint Node install binary comes with the following interfaces and utilities.
 
-**JSON-RPC APIs**: JSON-RPC server runs inside the node, and it exposes [APIs](https://github.com/klaytn/klaytn-docs/blob/master/docs/installation-guide/dapp/json-rpc/README.md) for Blockchain Application development. It has several node management APIs as well.
+**JSON-RPC APIs**: JSON-RPC server runs inside the node, and it exposes [APIs](https://docs.kaia.io/nodes/endpoint-node/) for Blockchain Application development. It has several node management APIs as well.
 
-**Command-line Interface**: Provides account management and node configuration functions. An interactive JavaScript console is also provided, that is attached to the node. JavaScript console implements most of the [caver-js APIs](https://github.com/klaytn/klaytn-docs/blob/master/docs/installation-guide/dapp/sdk/caver-js/README.md)
+**Command-line Interface**: Provides account management and node configuration functions. An interactive JavaScript console is also provided, that is attached to the node. JavaScript console implements most of the [caver-js APIs](https://docs.kaia.io/references/sdk/caver-js/)
 
 Setting up your own node means you'll be downloading a copy of the Kaia blockchain through a client. Thus, you'll need high-end  computers for the job.  You can go for a deep dive into setting up your own Kaia node with the following documentation. 
 

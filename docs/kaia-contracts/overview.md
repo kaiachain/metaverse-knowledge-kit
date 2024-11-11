@@ -23,9 +23,9 @@ In conclusion, utilizing smart contracts and blockchain technology is crucial fo
 
 Kaia currently utilizes [Solidity](https://github.com/ethereum/solidity) as the primary programming language as it is a widely used contract language for Ethereum and has a large user base and an active community.
 
-[Kaia-contracts](https://github.com/klaytn/klaytn-contracts) is an open-source smart contract library that offers reusable building blocks for developers to quickly and easily use in their Kaia-based projects. It contains a full suite of standardized smart contract interfaces, libraries, and implementations, enabling developers to inherit and develop applications quickly and safely. 
+[Kaia-contracts](https://github.com/kaiachain/kaia-contracts) is an open-source smart contract library that offers reusable building blocks for developers to quickly and easily use in their Kaia-based projects. It contains a full suite of standardized smart contract interfaces, libraries, and implementations, enabling developers to inherit and develop applications quickly and safely. 
 
-[Kaia Improvement Proposals](https://kips.klaytn.foundation/) (KIPs) outline the standards for the Kaia platform, including core protocol specifications, client APIs, and contract standards. Token standards such as [KIP7](https://kips.klaytn.foundation/KIPs/kip-7) (Fungible Tokens), [KIP17](https://kips.klaytn.foundation/KIPs/kip-17) (Non-Fungible Tokens), and [KIP37](https://kips.klaytn.foundation/KIPs/kip-37) (Multi-tokens) are some of the key contract standards for Kaia-based projects.
+[Kaia Improvement Proposals](https://kips.kaia.io/) (KIPs) outline the standards for the Kaia platform, including core protocol specifications, client APIs, and contract standards. Token standards such as [KIP7](https://kips.kaia.io/KIPs/kip-7) (Fungible Tokens), [KIP17](https://kips.kaia.io/KIPs/kip-17) (Non-Fungible Tokens), and [KIP37](https://kips.kaia.io/KIPs/kip-37) (Multi-tokens) are some of the key contract standards for Kaia-based projects.
 
 
 :::info

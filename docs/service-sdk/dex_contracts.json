@@ -3,7 +3,7 @@
         "chainName": "Kaia Kairos",
         "chainId": 1001,
         "rpcUrl": "https://public-en-kairos.node.kaia.io",
-        "blockExplorerUrl": "https://baobab.scope.klaytn.com"
+        "blockExplorerUrl": "https://kairos.kaiascan.io"
     },
     "tokens": [
         {

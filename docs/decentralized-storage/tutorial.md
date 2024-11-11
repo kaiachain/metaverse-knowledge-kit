@@ -9,7 +9,7 @@ In this tutorial, you will learn with a step-by-step guide how to install, spawn
 
 ## Prerequisites <a id="Prerequisites"></a> 
 
-* [Node Js and NPM](https://kinsta.com/blog/how-to-install-node-js/)
+* [Node Js and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 * Install [caver-js](https://www.npmjs.com/package/caver-js)
 * Subscribe to any Service Provider: You can integrate your IPFS project using any service provider. In this guide we will make use of [Infura](https://docs.infura.io/infura/getting-started) which gives access to project ID and Project Secret to connect your project to IPFS.
 

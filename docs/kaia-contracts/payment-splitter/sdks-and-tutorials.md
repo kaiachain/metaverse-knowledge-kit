@@ -7,9 +7,9 @@ In this guide, you will implement a PaymentSplitter into an  NFT contract using 
 
 ## 1. Prerequisites <a id="Prerequsite"></a> 
 
-* [Remix IDE](https://docs.kaia.io/docs/build/tutorials/connecting-remix/#connecting-kaia---remix-using-kaikas-) and [Kaikas](https://kaikas.zendesk.com/hc/en-us/articles/6657796272793-How-do-I-install-PC-Kaikas-)
+* [Remix IDE](https://docs.kaia.io/docs/build/tutorials/connecting-remix/) and [Kaia Wallet](https://www.kaiawallet.io/)
 * Enough test KAIA from [faucet](https://faucet.kaia.io/)
-* [Node Js and NPM](https://kinsta.com/blog/how-to-install-node-js/)
+* [Node Js and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 ## 2. Deploying NFT - Payment Splitter Smart contract <a id="Deploying NFT - Payment Splitter Smart contract"></a> 
 

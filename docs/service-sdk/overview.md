@@ -35,7 +35,7 @@ The Kaia Service SDK (KSS) brings various benefits to the metaverse, including:
 
 ## Packages <a id="Packages"></a>
 
-Kaia is committed to making all ecosystem services available as part of this SDK. While we work on adding more resources, you may first access various kits that are currently available with this [release](https://github.com/klaytn/klaytn-service-sdk/releases).
+Kaia is committed to making all ecosystem services available as part of this SDK. While we work on adding more resources, you may first access various kits that are currently available with this [release](https://github.com/kaiachain/kaia-service-sdk/releases).
 
 **Oracle Starter Kit:**
 The [Oracle Starter Kit](./oracle-starter-kit.md) provides libraries for random number generation, external API (GET/POST) calls and price feed.

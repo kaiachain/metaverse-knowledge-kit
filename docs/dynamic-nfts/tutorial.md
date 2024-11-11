@@ -9,7 +9,7 @@ The introduction of dynamic NFTs will result in excellent gameplay in the gaming
 
 One of these eight NFTs, the Gold Evolve NFT, made a unique promise: if LaMelo Ball was named Rookie of the Year for the 2021 NBA season, the NFT would evolve to reflect a new image. Following LaMelo's award, the NFT evolved.
 
-In this tutorial, you will learn how to build a dynamic NFT using Witnet Oracle to update your NFT metadata based on [KAIA/USDT](https://feeds.witnet.io/klaytn/klaytn-testnet_klay-usdt_6) price action.
+In this tutorial, you will learn how to build a dynamic NFT using Witnet Oracle to update your NFT metadata based on [KAIA/USDT](https://feeds.witnet.io/kaia/klaytn-mainnet_kaia-usdt_6) price action.
 
 ## Prerequisites <a id="Prerequisite"></a>
 
@@ -23,7 +23,7 @@ IPFS desktop and IPFS Companion harnesses the power of [IPFS](https://ipfs.io/) 
 
 3. Faucets and Testnet Tokens
    
-Make sure your MetaMask wallet is connected to [Kairos](https://docs.kaia.io/build/tutorials/connecting-metamask/#connect-to-kaia-baobab-network-testnet-). After connecting to the right network, get test KAIA from [Faucet](https://faucet.kaia.io/)
+Make sure your MetaMask wallet is connected to [Kairos](https://docs.kaia.io/build/tutorials/connecting-metamask/#step-3-connect-to-kaia-network-). After connecting to the right network, get test KAIA from [Faucet](https://faucet.kaia.io/)
 
 ## Set up <a id="set-up"></a>
 Create a `KdNFT.sol` file on Remix. Copy over the smart contract code below in the newly created file and save it.
