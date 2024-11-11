@@ -108,7 +108,7 @@ Further, royalty is specified as a fraction of Sale Price:
 
 **_feeDenominator()** is specified in basis point by default. This value defaults to 10,000 but is overridable. Also the feeNumerator as specified in **mintNFTWithRoyalty** function is calculated in basis point.  Take for instance if you want to set the royalty percentage to 10%, the **feeNumerator** will be 10/100 * 10000 = 1000
 
-To get more insight of  how it works under the hood, check out this [codebase](https://github.com/klaytn/klaytn-contracts/blob/master/contracts/token/common/ERC2981.sol).
+To get more insight of  how it works under the hood, check out this [codebase](https://github.com/kaiachain/kaia-contracts/blob/master/contracts/token/common/ERC2981.sol).
 
 
 

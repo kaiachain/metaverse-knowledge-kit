@@ -20,7 +20,7 @@ Click [here](https://docs.kaia.io/docs/build/tutorials/connecting-metamask/#step
 
 *Kaia mainnet: RPC URL* = https://public-en.node.kaia.io Chain ID = 8217
 
-*Kaia testnet: RPC URL* = https://api.baobab.klaytn.net:8651/ Chain ID = 1001
+*Kaia testnet: RPC URL* = https://public-en-kairos.node.kaia.io Chain ID = 1001
 
 ## ABI formatting <a id="ABI Formatting"></a>
 The ABI has a special formatting. Replace the " with \" , otherwise it will not be recognise by the SDK.

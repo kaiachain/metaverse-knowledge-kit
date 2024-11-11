@@ -11,9 +11,9 @@ Caver-js requires contract ABI and contract address to interact with smart contr
 
 ## 1. Prerequisites <a id="KIP7 Tutorial Prerequsite"></a>
 
-* [Remix IDE](https://docs.kaia.io/docs/build/tutorials/connecting-remix/#connecting-kaia---remix-using-kaikas-) and [Kaikas](https://kaikas.zendesk.com/hc/en-us/articles/6657796272793-How-do-I-install-PC-Kaikas-)
+* [Remix IDE](https://docs.kaia.io/docs/build/tutorials/connecting-remix/#connecting-kaia---remix-using-kaikas-) and [Kaia Wallet](https://www.kaiawallet.io/)
 * Enough test KAIA from the [faucet](https://faucet.kaia.io/)
-* [Node Js and NPM](https://kinsta.com/blog/how-to-install-node-js/)
+* [Node Js and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 In this tutorial, you will learn how to deploy a KIP7 smart contract and interact with the deployed contract. Smart contracts must already be deployed on the blockchain i.e you must have the smart contract address and ABI. In a little while, we would go through deploying the contract using Remix IDE.
 

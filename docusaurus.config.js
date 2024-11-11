@@ -70,13 +70,6 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/kaia-logo.png',
-      announcementBar: {
-        id: 'docs_archive',
-        content: '<div style="font-size: 13px">📢 Metaverse Knowledge Kit is now live, but <b>some content is still being updated to reflect the transition from Klaytn.</b> Thank you for your understanding. 🙏🏻</div>',
-        backgroundColor: '#789806',
-        textColor: '#FFFFFF',
-        isCloseable: true,
-      },
       navbar: {
         title: 'Metaverse Knowledge Kit',
         logo: {
@@ -129,7 +122,7 @@ const config = {
               },
               {
                 label: 'Blog',
-                href: 'https://www.klaytn.foundation/blog/',
+                href: 'https://medium.com/kaiachain ',
               },
             ],
           },
@@ -146,7 +139,7 @@ const config = {
               },
               {
                 label: 'Telegram',
-                href: 'https://t.me/Klaytn_EN',
+                href: 'https://t.me/KaiaChain_EN ',
               },
             ],
           },
@@ -155,23 +148,23 @@ const config = {
             items: [
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/klaytn_official',
+                href: 'https://x.com/KaiaChain ',
               },
               {
                 label: 'Dev Twitter',
-                href: 'https://twitter.com/BuildonKlaytn',
+                href: 'https://x.com/BuildonKaia ',
               },
               {
                 label: 'Facebook',
-                href: 'https://www.facebook.com/groups/klaytndevelopers',
+                href: 'https://www.facebook.com/kaiachain.dev',
               },
               {
                 label: 'Reddit',
-                href: 'https://www.reddit.com/r/klaytn/',
+                href: 'https://www.reddit.com/r/kaiachain/',
               },
               {
                 label: 'YouTube',
-                href: 'https://www.youtube.com/c/Klaytn_official',
+                href: 'https://www.youtube.com/@kaiachain',
               },
             ],
           },

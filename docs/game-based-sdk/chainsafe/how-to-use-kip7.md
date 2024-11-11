@@ -300,9 +300,9 @@ Once connected, click on `Transfer` to execute the KIP7 token transfer.
 
 ![](/images/chainsafe/30_test_kip7_transferFunc.png)
 
-Here are the details of the transaction on [Klaytnscope](https://baobab.scope.klaytn.com/tx/0x1b9c6c4a21fa2bfd5e304c647908e26e0f0c4d5fed8d727bce1d586cca2afab1?tabId=eventLog).
+Here are the details of the transaction on [Kaiascope](https://kairos.kaiascope.com/tx/0x1b9c6c4a21fa2bfd5e304c647908e26e0f0c4d5fed8d727bce1d586cca2afab1?tabId=eventLog).
 
-To test the `Mint` and `SafeTransfer` function, click on the corresponding button and confirm your transaction on Klaytnscope.
+To test the `Mint` and `SafeTransfer` function, click on the corresponding button and confirm your transaction on KaiaScan.
 
 
 :::info

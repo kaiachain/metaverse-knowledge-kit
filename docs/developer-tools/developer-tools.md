@@ -19,7 +19,7 @@ A wallet is a digital software that stores private and public keys and keeps tra
 * [Klip](https://klipwallet.com/) - [Documentation](https://docs.klipwallet.com/)
 * [D'CENT](https://dcentwallet.com/)
 * [nBlocks](https://nblocks.io/)
-* [Kaia Wallet](https://wallet.klaytn.com/)
+* [Kaia Wallet](https://www.kaiawallet.io/)
 * [Huobi Wallet](https://www.huobiwallet.com/en/)
 * [Token Pocket](https://www.tokenpocket.pro/)
 * [Biport](https://biport.io/)
@@ -32,7 +32,7 @@ A wallet is a digital software that stores private and public keys and keeps tra
 
 ### Browser Extension Wallets <a id="Browser Extension Wallets"></a>
 
-* [Kaikas](https://chrome.google.com/webstore/detail/kaikas/jblndlipeogpafnldhgmapagcccfchpi) - [Documentation](https://docs.kaikas.io/)
+* [Kaia Wallet](https://www.kaiawallet.io/) - [Documentation](https://docs.kaiawallet.io/)
 * [Metamask](https://docs.kaia.io/docs/build/tutorials/connecting-metamask/)
 * [Dekey](https://chrome.google.com/webstore/detail/dekey/cekclnkpicopjiagjphfoahcinhmgbjp)
 * [COIN98](https://chrome.google.com/webstore/detail/coin98-wallet/aeachknmefphepccionboohckonoeemg)
@@ -44,13 +44,7 @@ A wallet is a digital software that stores private and public keys and keeps tra
 * [D'CENT](https://dcentwallet.com/)
 
 ### Multisig Wallet <a id="MultiSig Wallet"></a>
-* [Kaia Safe](https://safe.klaytn.foundation/)
-
-<!-- ### Open Source Wallets <a id="Open Source Wallets"></a>
-
-The Kaia ecosystem has open-source wallets that developers can easily integrate with their dApp and also tweak additional features according to their needs. 
-
-* [Oko Wallet](https://github.com/madfish-solutions/oko-wallet) - is a non-custodial EVM multi-chain wallet that supports the Kaia chain and is available for browser extensions, iOS applications and Android applications. -->
+* [Kaia Safe](https://safe.kaia.io/)
 
 ## Explorers <a id="Explorer"></a>
 
@@ -58,8 +52,9 @@ Blockchain explorers are web applications that allow users to search and view da
 
 Kaia supports the following explorers: 
 
-* [Klaytnscope](https://scope.klaytn.com/)
-* [KlaytnFinder](https://www.klaytnfinder.io/)
+* [KaiaScan](https://kaiascan.io/)
+* [Kaiascope](https://kaiascope.com/)
+* [OKX Kaia Explorer](https://www.okx.com/web3/explorer/kaia)
 
 ### Open-Source Explorers
 
@@ -70,6 +65,7 @@ Kaia supports the following explorers:
 ## SDKs and API Libraries <a id="SDKs and API Libraries"></a>
 For your metaverse application to interact with the Kaia blockchain (i.e., read on-chain data or send transactions on-chain), it must be connected to a Kaia node. To connect to a Kaia node, Kaia provides several convenient libraries that will teach you how to do so: 
 
+* [Kaia SDK](https://github.com/kaiachain/kaia-sdk)
 * [Caver-js](https://github.com/kaiachain/caver-js)
 * [Web3 js](https://web3js.readthedocs.io/en/v1.8.1/)
 * [Tatum-js](https://github.com/tatumio/tatum-js)
@@ -104,11 +100,9 @@ The DEX testnet is available for testing in the Kairos testnet without any insta
 
 * [Kaia Online Toolkit](https://toolkit.kaia.io/): This toolkit provides code samples and pages to help you utilize the Kaia SDK(caver-js). With the Online Toolkit, you can derive the code to deploy your Kaia contracts using caver-js. This contract includes [KIP7](https://toolkit.kaia.ip/kct/KIP7Deploy), [KIP17](https://toolkit.kaia.io/kct/KIP17Deploy), [KIP37](https://toolkit.kaia.io/kct/KIP37Deploy) and other [KCT](https://toolkit.kaia.io/kct/KCTDetection). The online toolkit also gives users the functionality of interacting with deployed contracts given its ABI and contract address.
   
-<!-- * [Klay-Spray](https://github.com/klaytn/klayspray): Want to quickly deploy a layer 1 network? Klayspray helps you easily deploy a private layer1 network. -->
-  
 * [Sidechain](https://docs.kaia.io/nodes/service-chain/): This enables developers who wants to build a local private network with high TPS, minimal transaction fees or data privacy.
    
-* [Kaia Wizard](https://wizard.klaytn.foundation/): This is an interactive generator to bootstrap your smart contract and learn about [Kaia Contracts](https://github.com/klaytn/klaytn-contracts). This is based on [OpenZeppelin Wizard](https://wizard.openzeppelin.com/).
+* [Kaia Wizard](https://wizard.kaia.io/): This is an interactive generator to bootstrap your smart contract and learn about [Kaia Contracts](https://github.com/kaiachain/kaia-contracts). This is based on [OpenZeppelin Wizard](https://wizard.openzeppelin.com/).
 
 
 :::info

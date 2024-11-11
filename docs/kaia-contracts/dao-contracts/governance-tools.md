@@ -9,9 +9,9 @@ This page contains the list of governance tools that can be integrated with dApp
 
 Snapshot is a leading decentralized off-chain governance platform that enables protocols/projects to conduct secure decentralized decision-making without having to build the infrastructure from scratch. Read this [guide](https://medium.com/klaytn/using-snapshot-for-your-klaytn-project-governance-1ced3ff6244) on how how to use Snapshot on Kaia. 
 
-**2. [Kaia Square](https://square.klaytn.foundation/Home)**
+**2. [Kaia Square](https://square.kaia.io/)**
 
-Kaia Square is a governance platform aimed at enhancing transparency and decentralization within the Kaia ecosystem. The governance portal provides information about Kaia Governance Council (GC) members, their KLAY transactions, and staking deposits. With the introduction of [KIP81](https://kips.klaytn.foundation/KIPs/kip-81), this tool seeks to introduce an on-chain voting status feature that also allows users to keep track of GC decision-making progress in real-time. Refer to this [guide](https://medium.com/klaytn/klaytn-square-beta-is-now-available-4038aa9cb8d9) for more information.
+Kaia Square is a governance platform aimed at enhancing transparency and decentralization within the Kaia ecosystem. The governance portal provides information about Kaia Governance Council (GC) members, their KLAY transactions, and staking deposits. With the introduction of [KIP81](https://kips.kaia.io/KIPs/kip-81), this tool seeks to introduce an on-chain voting status feature that also allows users to keep track of GC decision-making progress in real-time. Refer to this [guide](https://medium.com/klaytn/klaytn-square-beta-is-now-available-4038aa9cb8d9) for more information.
 
 **3. [XDAO](https://docs.xdao.app/)**
 

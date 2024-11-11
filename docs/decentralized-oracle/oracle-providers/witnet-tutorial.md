@@ -18,7 +18,7 @@ Witnet price feeds are timely updated with fresh data as aggregated from multipl
 
 * [MetaMask](https://metamask.io/download/)
 * [Remix IDE](https://remix.ethereum.org/)
-* [Kaia Plugin on Remix](https://klaytn.foundation/using-klaytn-plugin-on-remix/)
+* [Kaia Plugin on Remix](https://ide.kaia.io/)
 * Test KAIA from [Faucet](https://faucet.kaia.io/)
 
 ### Step 1 - Get the WitnetPriceRouter address <a id="Get the WitnetPriceRouter address "></a>
@@ -29,13 +29,13 @@ Go to [Multi-chain addresses](https://docs.witnet.io/smart-contracts/witnet-data
 
 
 To get the price of the KAIA/USD pair on Kairos network, we will need both the Price Router address and the ID(which represents the pair).
-> WitnetPriceRouter Address: [0xeD074DA2A76FD2Ca90C1508930b4FB4420e413B0](https://baobab.scope.klaytn.com/account/0xeD074DA2A76FD2Ca90C1508930b4FB4420e413B0?tabId=txList)
+> WitnetPriceRouter Address: [0xeD074DA2A76FD2Ca90C1508930b4FB4420e413B0](https://kairos.kaiascope.com/account/0xeD074DA2A76FD2Ca90C1508930b4FB4420e413B0?tabId=txList)
 > ID: *0x6cc828d1*
 
 
 ### Step 2 - Open Remix IDE <a id="Step2 - Open Remix IDE"></a>
 
-Make sure you have the [Kaia Plugin](https://klaytn.foundation/using-klaytn-plugin-on-remix/) installed.
+Make sure you have the [Kaia Plugin](https://ide.kaia.io/) installed.
 
 Click this [link](https://remix.ethereum.org/#url=https://github.com/tantely-klaytn/witnet-oracle/blob/main/PriceFeed.sol) to open the code in [Remix](https://remix.ethereum.org/#url=https://github.com/tantely-klaytn/witnet-oracle/blob/main/PriceFeed.sol):
 
@@ -53,7 +53,7 @@ contract PriceFeed {
     IWitnetPriceRouter public immutable witnetPriceRouter;
     
     /*
-     * Network: Klaytn Kairos
+     * Network: Kaia Kairos
      * WitnetPriceRouter: 0xeD074DA2A76FD2Ca90C1508930b4FB4420e413B0
      **/
     constructor() {
@@ -88,7 +88,7 @@ Once your contract is deployed, you will be able to see the PriceFeed contract u
 Click on it to fetch the current price of KAIA per USD. At the time of writing, it is `192307`, which means 1 KAIA equals to **$0.192307**.
 
 ## Conclusion <a id="Conclusion"></a>
-In this tutorial, we saw how to use Witnet oracle to get the Price Feed on kairos testnet. These same steps can be applied when trying to get the price Feed on Kaia Cypress(Mainnet).  If you want more information, visit [Kaia Docs](https://docs.klaytn.foundation/) and [Witnet Oracle Docs](https://docs.witnet.io/). If you have any questions, visit [Kaia Forum](https://forum.klaytn.foundation/).
+In this tutorial, we saw how to use Witnet oracle to get the Price Feed on kairos testnet. These same steps can be applied when trying to get the price Feed on Kaia Cypress(Mainnet).  If you want more information, visit [Kaia Docs](https://docs.kaia.io/) and [Witnet Oracle Docs](https://docs.witnet.io/). If you have any questions, visit [Kaia Forum](https://devforum.kaia.io/).
 
 
 :::info

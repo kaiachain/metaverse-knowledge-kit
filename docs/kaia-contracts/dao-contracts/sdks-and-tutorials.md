@@ -14,9 +14,9 @@ In this tutorial you will use [Kaia Contract](https://github.com/kaiachain/kaia-
 
 * [Metamask](https://metamask.io/download/): Used to deploy the contracts interact with the contracts.
 * [Remix IDE](https://remix.ethereum.org/): Used to compile the contracts and deploy through MetaMask.
-* [Kaia Plugin on Remix](https://klaytn.foundation/using-klaytn-plugin-on-remix/): develop, deploy, and interact with smart contracts on the Kaia blockchain and execute various Kaia-specific transactions
+* [Kaia Plugin on Remix](https://ide.kaia.io/): develop, deploy, and interact with smart contracts on the Kaia blockchain and execute various Kaia-specific transactions
 * Test KAIA from [Faucet](https://faucet.kaia.io/): Fund your account with sufficient KAIA
-* [Node Js and NPM](https://kinsta.com/blog/how-to-install-node-js/)
+* [Node Js and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 ## 2. Create and deploy your KIP7 governance token <a id="Create and deploy your KIP7 governance token"></a>
 

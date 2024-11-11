@@ -27,7 +27,7 @@ This is how a payment splitter contract works on a high level:
 3. Contract receives payment
 4. Tokens released to payees based on their shares by calling the release function
 
-To learn more about Payment Splitter, check out the [Payment Splitter Repository](https://github.com/klaytn/klaytn-contracts/blob/master/contracts/finance/PaymentSplitter.sol).
+To learn more about Payment Splitter, check out the [Payment Splitter Repository](https://github.com/kaiachain/kaia-contracts/blob/master/contracts/finance/PaymentSplitter.sol).
 
 ## Usecase <a id="Usecase"></a>  
 

@@ -8,9 +8,9 @@ In this guide, you will deploy a KIP37 contract on Remix IDE and then use caver-
 
 ## 1. Prerequisites <a id="KIP37 Tutorial Prerequsite"></a>
 
-* [Remix IDE](https://docs.kaia.io/docs/build/tutorials/connecting-remix/#connecting-kaia---remix-using-kaikas-) and [Kaikas](https://kaikas.zendesk.com/hc/en-us/articles/6657796272793-How-do-I-install-PC-Kaikas-)
+* [Remix IDE](https://docs.kaia.io/docs/build/tutorials/connecting-remix/) and [Kaia Wallet](https://www.kaiawallet.io/)
 * Enough test KAIA from [faucet](https://faucet.kaia.io/)
-* [Node Js and NPM](https://kinsta.com/blog/how-to-install-node-js/)
+* [Node Js and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 ## 2. Deploying a KIP 37 smart contract <a id="Deploying KIP 37 Smart contract"></a>
 This code below defines a KIP37 token. The contract uses the `KIP37` contract from the [Kaia contracts library](https://github.com/kaiachain/kaia-contracts), as well as the `Counters` contract for managing token ID counters.

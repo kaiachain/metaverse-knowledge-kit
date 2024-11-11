@@ -8,9 +8,9 @@ In this guide, you will deploy a KIP17 contracts on Remix IDE and, after deploym
 
 ## 1. Prerequisites <a id="KIP17 Tutorial Prerequsite"></a>
 
-* [Remix IDE](https://docs.kaia.io/docs/build/tutorials/connecting-remix/) and [Kaikas](https://kaikas.zendesk.com/hc/en-us/articles/6657796272793-How-do-I-install-PC-Kaikas-)
+* [Remix IDE](https://docs.kaia.io/docs/build/tutorials/connecting-remix/) and [Kaia Wallet](https://www.kaiawallet.io/)
 * Enough test KAIA from [faucet](https://faucet.kaia.io/)
-* [Node Js and NPM](https://kinsta.com/blog/how-to-install-node-js/)
+* [Node Js and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 ## 2. Deploying KIP 17 Smart contract <a id="Deploying KIP 17 Smart contract"></a>
 The code below defines a KIP17 token called. The contract uses the `KIP17` and `KIP17Enumerable` contracts from the [Kaia contracts library](https://github.com/kaiachain/kaia-contracts), as well as the `Counters` and `Ownable` contract for managing token ID counters and access control
